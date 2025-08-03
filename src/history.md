@@ -9,3 +9,10 @@ Added English and Vietnamese translation resources for Greeting and EducationCar
 
 ---
 
+## Update - 2025-08-03 10:17
+**Task**: refactor: update structure of components
+
+Refactored React components in src/components to improve structure and reusability.
+
+---
+
