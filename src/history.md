@@ -30,3 +30,10 @@ Standardized grid gutters across all project display container sections.
 
 ---
 
+## Update - 2025-08-08 16:25
+**Task**: docs: add screenshots to project gallery
+
+Updated documentation with links to current UI layouts.
+
+---
+
