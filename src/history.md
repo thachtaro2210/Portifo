@@ -16,3 +16,10 @@ Refactored React components in src/components to improve structure and reusabili
 
 ---
 
+## Update - 2025-08-08 10:13
+**Task**: feat: enable multi-language toggle for all sections
+
+Integrated translation helper in experience, projects, achievements, and contact sections.
+
+---
+
