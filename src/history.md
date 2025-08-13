@@ -37,3 +37,10 @@ Updated documentation with links to current UI layouts.
 
 ---
 
+## Update - 2025-08-13 12:19
+**Task**: feat: customize social media links list
+
+Configured LinkedIn, GitHub, Gmail, and LeetCode link elements in the footer and contact sections.
+
+---
+
