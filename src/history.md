@@ -44,3 +44,10 @@ Configured LinkedIn, GitHub, Gmail, and LeetCode link elements in the footer and
 
 ---
 
+## Update - 2025-08-14 21:02
+**Task**: feat: introduce language context and switcher
+
+Created StyleContext to manage selected language state globally across the application.
+
+---
+
