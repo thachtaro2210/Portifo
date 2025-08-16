@@ -51,3 +51,10 @@ Created StyleContext to manage selected language state globally across the appli
 
 ---
 
+## Update - 2025-08-16 08:39
+**Task**: style: adjust margins and padding for mobile view
+
+Fine-tuned flex spacing and padding values for screen widths under 768px.
+
+---
+
