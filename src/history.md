@@ -65,3 +65,10 @@ Standardized grid gutters across all project display container sections.
 
 ---
 
+## Update - 2025-08-17 17:16
+**Task**: feat: enable multi-language toggle for all sections
+
+Integrated translation helper in experience, projects, achievements, and contact sections.
+
+---
+
