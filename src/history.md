@@ -79,3 +79,10 @@ Implemented CSS keyframe animations for standard hover states on button componen
 
 ---
 
+## Update - 2025-09-04 11:44
+**Task**: fix: prevent text overlapping in mobile view
+
+Resolved overflow issue in Greeting titles by adjusting font sizes.
+
+---
+
