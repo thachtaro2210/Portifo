@@ -107,3 +107,10 @@ Fixed height styling of school logo images inside EducationCard component.
 
 ---
 
+## Update - 2025-09-12 16:35
+**Task**: feat: add translations for greeting and education
+
+Added English and Vietnamese translation resources for Greeting and EducationCard components.
+
+---
+
