@@ -100,3 +100,10 @@ Added Promising Award from Faculty Scientific Research with links to published p
 
 ---
 
+## Update - 2025-09-12 10:04
+**Task**: fix: fix school card image height rendering
+
+Fixed height styling of school logo images inside EducationCard component.
+
+---
+
