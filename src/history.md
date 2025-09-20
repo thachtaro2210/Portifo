@@ -114,3 +114,10 @@ Added English and Vietnamese translation resources for Greeting and EducationCar
 
 ---
 
+## Update - 2025-09-20 22:10
+**Task**: feat: enable multi-language toggle for all sections
+
+Integrated translation helper in experience, projects, achievements, and contact sections.
+
+---
+
