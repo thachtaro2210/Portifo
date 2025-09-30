@@ -121,3 +121,10 @@ Integrated translation helper in experience, projects, achievements, and contact
 
 ---
 
+## Update - 2025-09-30 19:13
+**Task**: feat: add scientific research award to achievements
+
+Added Promising Award from Faculty Scientific Research with links to published paper.
+
+---
+
