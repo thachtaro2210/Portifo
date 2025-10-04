@@ -156,3 +156,10 @@ Updated Header.scss styles to support correct rendering in tablet and mobile vie
 
 ---
 
+## Update - 2025-10-04 17:01
+**Task**: feat: add scientific research award to achievements
+
+Added Promising Award from Faculty Scientific Research with links to published paper.
+
+---
+
