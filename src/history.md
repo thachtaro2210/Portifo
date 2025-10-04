@@ -149,3 +149,10 @@ Fine-tuned flex spacing and padding values for screen widths under 768px.
 
 ---
 
+## Update - 2025-10-04 16:47
+**Task**: style: improve header responsive layout
+
+Updated Header.scss styles to support correct rendering in tablet and mobile viewports.
+
+---
+
