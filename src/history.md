@@ -163,3 +163,10 @@ Added Promising Award from Faculty Scientific Research with links to published p
 
 ---
 
+## Update - 2025-10-05 15:54
+**Task**: feat: enable multi-language toggle for all sections
+
+Integrated translation helper in experience, projects, achievements, and contact sections.
+
+---
+
