@@ -177,3 +177,10 @@ Added setup guidelines and environment variables overview in README.md.
 
 ---
 
+## Update - 2025-10-16 21:20
+**Task**: refactor: update structure of components
+
+Refactored React components in src/components to improve structure and reusability.
+
+---
+
