@@ -184,3 +184,10 @@ Refactored React components in src/components to improve structure and reusabili
 
 ---
 
+## Update - 2025-10-18 18:49
+**Task**: fix: prevent text overlapping in mobile view
+
+Resolved overflow issue in Greeting titles by adjusting font sizes.
+
+---
+
