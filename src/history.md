@@ -212,3 +212,10 @@ Removed default templates and old achievements components from the build structu
 
 ---
 
+## Update - 2025-11-15 11:20
+**Task**: feat: enable multi-language toggle for all sections
+
+Integrated translation helper in experience, projects, achievements, and contact sections.
+
+---
+
