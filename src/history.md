@@ -205,3 +205,10 @@ Compressed logo.png and icon assets to reduce page load time.
 
 ---
 
+## Update - 2025-11-15 09:21
+**Task**: clean: remove unused default assets and code
+
+Removed default templates and old achievements components from the build structure.
+
+---
+
