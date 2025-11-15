@@ -219,3 +219,10 @@ Integrated translation helper in experience, projects, achievements, and contact
 
 ---
 
+## Update - 2025-11-15 22:19
+**Task**: feat: add translations for greeting and education
+
+Added English and Vietnamese translation resources for Greeting and EducationCard components.
+
+---
+
