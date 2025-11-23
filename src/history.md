@@ -226,3 +226,10 @@ Added English and Vietnamese translation resources for Greeting and EducationCar
 
 ---
 
+## Update - 2025-11-23 18:57
+**Task**: style: update theme color constants
+
+Updated _globalColor.scss variables for better contrast ratios in dark mode.
+
+---
+
