@@ -240,3 +240,10 @@ Implemented CSS keyframe animations for standard hover states on button componen
 
 ---
 
+## Update - 2025-11-29 15:44
+**Task**: fix: fix school card image height rendering
+
+Fixed height styling of school logo images inside EducationCard component.
+
+---
+
