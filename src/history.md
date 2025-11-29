@@ -247,3 +247,10 @@ Fixed height styling of school logo images inside EducationCard component.
 
 ---
 
+## Update - 2025-11-29 19:57
+**Task**: fix: correct Vietnamese translations in portfolio config
+
+Corrected typing mistakes and grammar in portfolio.js localization strings.
+
+---
+
