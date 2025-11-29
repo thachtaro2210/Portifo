@@ -233,3 +233,10 @@ Updated _globalColor.scss variables for better contrast ratios in dark mode.
 
 ---
 
+## Update - 2025-11-29 14:26
+**Task**: style: add hover micro-animations to buttons
+
+Implemented CSS keyframe animations for standard hover states on button components.
+
+---
+
