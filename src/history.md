@@ -268,3 +268,10 @@ Added Promising Award from Faculty Scientific Research with links to published p
 
 ---
 
+## Update - 2025-12-04 22:48
+**Task**: docs: update installation instructions in readme
+
+Added setup guidelines and environment variables overview in README.md.
+
+---
+
