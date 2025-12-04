@@ -254,3 +254,10 @@ Corrected typing mistakes and grammar in portfolio.js localization strings.
 
 ---
 
+## Update - 2025-12-04 09:56
+**Task**: docs: add screenshots to project gallery
+
+Updated documentation with links to current UI layouts.
+
+---
+
