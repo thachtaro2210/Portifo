@@ -282,3 +282,10 @@ Removed default templates and old achievements components from the build structu
 
 ---
 
+## Update - 2025-12-16 09:31
+**Task**: feat: introduce language context and switcher
+
+Created StyleContext to manage selected language state globally across the application.
+
+---
+
