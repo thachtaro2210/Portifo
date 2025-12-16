@@ -289,3 +289,10 @@ Created StyleContext to manage selected language state globally across the appli
 
 ---
 
+## Update - 2025-12-16 10:38
+**Task**: perf: optimize image asset sizes and favicons
+
+Compressed logo.png and icon assets to reduce page load time.
+
+---
+
