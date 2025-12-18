@@ -296,3 +296,10 @@ Compressed logo.png and icon assets to reduce page load time.
 
 ---
 
+## Update - 2025-12-18 12:27
+**Task**: feat: customize social media links list
+
+Configured LinkedIn, GitHub, Gmail, and LeetCode link elements in the footer and contact sections.
+
+---
+
