@@ -310,3 +310,10 @@ Created StyleContext to manage selected language state globally across the appli
 
 ---
 
+## Update - 2025-12-19 17:18
+**Task**: fix: prevent text overlapping in mobile view
+
+Resolved overflow issue in Greeting titles by adjusting font sizes.
+
+---
+
