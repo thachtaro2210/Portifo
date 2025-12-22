@@ -317,3 +317,10 @@ Resolved overflow issue in Greeting titles by adjusting font sizes.
 
 ---
 
+## Update - 2025-12-22 14:02
+**Task**: docs: add screenshots to project gallery
+
+Updated documentation with links to current UI layouts.
+
+---
+
