@@ -331,3 +331,10 @@ Standardized grid gutters across all project display container sections.
 
 ---
 
+## Update - 2025-12-28 12:51
+**Task**: refactor: extract helper function for localization
+
+Extracted t(parent, key) helper method to streamline translation logic in containers.
+
+---
+
