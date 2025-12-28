@@ -338,3 +338,10 @@ Extracted t(parent, key) helper method to streamline translation logic in contai
 
 ---
 
+## Update - 2025-12-28 14:49
+**Task**: docs: update installation instructions in readme
+
+Added setup guidelines and environment variables overview in README.md.
+
+---
+
