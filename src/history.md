@@ -345,3 +345,10 @@ Added setup guidelines and environment variables overview in README.md.
 
 ---
 
+## Update - 2025-12-30 14:29
+**Task**: clean: remove unused default assets and code
+
+Removed default templates and old achievements components from the build structure.
+
+---
+
