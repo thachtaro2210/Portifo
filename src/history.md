@@ -359,3 +359,10 @@ Modified body background color for a smoother dark mode experience.
 
 ---
 
+## Update - 2026-01-03 22:45
+**Task**: style: update theme color constants
+
+Updated _globalColor.scss variables for better contrast ratios in dark mode.
+
+---
+
