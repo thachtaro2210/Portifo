@@ -366,3 +366,10 @@ Updated _globalColor.scss variables for better contrast ratios in dark mode.
 
 ---
 
+## Update - 2026-01-07 19:41
+**Task**: fix: prevent text overlapping in mobile view
+
+Resolved overflow issue in Greeting titles by adjusting font sizes.
+
+---
+
