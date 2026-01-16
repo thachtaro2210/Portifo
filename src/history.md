@@ -373,3 +373,10 @@ Resolved overflow issue in Greeting titles by adjusting font sizes.
 
 ---
 
+## Update - 2026-01-16 19:57
+**Task**: feat: support custom font family Outfit
+
+Added custom Outfit Google font configuration inside index.css.
+
+---
+
