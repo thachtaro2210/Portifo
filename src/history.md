@@ -380,3 +380,10 @@ Added custom Outfit Google font configuration inside index.css.
 
 ---
 
+## Update - 2026-01-17 13:55
+**Task**: refactor: extract helper function for localization
+
+Extracted t(parent, key) helper method to streamline translation logic in containers.
+
+---
+
