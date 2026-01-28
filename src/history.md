@@ -394,3 +394,10 @@ Updated Header.scss styles to support correct rendering in tablet and mobile vie
 
 ---
 
+## Update - 2026-01-28 17:34
+**Task**: refactor: extract helper function for localization
+
+Extracted t(parent, key) helper method to streamline translation logic in containers.
+
+---
+
