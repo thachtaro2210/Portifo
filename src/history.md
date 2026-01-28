@@ -387,3 +387,10 @@ Extracted t(parent, key) helper method to streamline translation logic in contai
 
 ---
 
+## Update - 2026-01-28 17:31
+**Task**: style: improve header responsive layout
+
+Updated Header.scss styles to support correct rendering in tablet and mobile viewports.
+
+---
+
