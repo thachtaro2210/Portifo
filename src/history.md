@@ -401,3 +401,10 @@ Extracted t(parent, key) helper method to streamline translation logic in contai
 
 ---
 
+## Update - 2026-02-01 09:18
+**Task**: feat: add scientific research award to achievements
+
+Added Promising Award from Faculty Scientific Research with links to published paper.
+
+---
+
