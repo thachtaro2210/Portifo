@@ -415,3 +415,10 @@ Added setup guidelines and environment variables overview in README.md.
 
 ---
 
+## Update - 2026-02-07 11:37
+**Task**: feat: support custom font family Outfit
+
+Added custom Outfit Google font configuration inside index.css.
+
+---
+
