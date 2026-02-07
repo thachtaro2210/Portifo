@@ -422,3 +422,10 @@ Added custom Outfit Google font configuration inside index.css.
 
 ---
 
+## Update - 2026-02-07 21:18
+**Task**: docs: add screenshots to project gallery
+
+Updated documentation with links to current UI layouts.
+
+---
+
