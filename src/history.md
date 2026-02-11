@@ -429,3 +429,10 @@ Updated documentation with links to current UI layouts.
 
 ---
 
+## Update - 2026-02-11 11:47
+**Task**: docs: update installation instructions in readme
+
+Added setup guidelines and environment variables overview in README.md.
+
+---
+
