@@ -436,3 +436,10 @@ Added setup guidelines and environment variables overview in README.md.
 
 ---
 
+## Update - 2026-02-11 14:40
+**Task**: fix: fix school card image height rendering
+
+Fixed height styling of school logo images inside EducationCard component.
+
+---
+
