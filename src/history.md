@@ -443,3 +443,10 @@ Fixed height styling of school logo images inside EducationCard component.
 
 ---
 
+## Update - 2026-02-16 08:34
+**Task**: feat: introduce language context and switcher
+
+Created StyleContext to manage selected language state globally across the application.
+
+---
+
