@@ -457,3 +457,10 @@ Refactored React components in src/components to improve structure and reusabili
 
 ---
 
+## Update - 2026-02-20 09:21
+**Task**: style: adjust margins and padding for mobile view
+
+Fine-tuned flex spacing and padding values for screen widths under 768px.
+
+---
+
