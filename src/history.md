@@ -464,3 +464,10 @@ Fine-tuned flex spacing and padding values for screen widths under 768px.
 
 ---
 
+## Update - 2026-02-20 10:52
+**Task**: style: update theme color constants
+
+Updated _globalColor.scss variables for better contrast ratios in dark mode.
+
+---
+
