@@ -485,3 +485,10 @@ Created StyleContext to manage selected language state globally across the appli
 
 ---
 
+## Update - 2026-02-28 13:41
+**Task**: refactor: update structure of components
+
+Refactored React components in src/components to improve structure and reusability.
+
+---
+
