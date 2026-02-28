@@ -478,3 +478,10 @@ Integrated translation helper in experience, projects, achievements, and contact
 
 ---
 
+## Update - 2026-02-28 12:27
+**Task**: feat: introduce language context and switcher
+
+Created StyleContext to manage selected language state globally across the application.
+
+---
+
