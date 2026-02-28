@@ -471,3 +471,10 @@ Updated _globalColor.scss variables for better contrast ratios in dark mode.
 
 ---
 
+## Update - 2026-02-28 12:00
+**Task**: feat: enable multi-language toggle for all sections
+
+Integrated translation helper in experience, projects, achievements, and contact sections.
+
+---
+
