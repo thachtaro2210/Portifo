@@ -506,3 +506,10 @@ Updated documentation with links to current UI layouts.
 
 ---
 
+## Update - 2026-03-06 19:27
+**Task**: feat: add translations for greeting and education
+
+Added English and Vietnamese translation resources for Greeting and EducationCard components.
+
+---
+
