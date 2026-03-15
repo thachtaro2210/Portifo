@@ -527,3 +527,10 @@ Added setup guidelines and environment variables overview in README.md.
 
 ---
 
+## Update - 2026-03-15 16:02
+**Task**: refactor: simplify language providers
+
+Simplified state management in Main.js by consolidating language toggles.
+
+---
+
