@@ -520,3 +520,10 @@ Standardized grid gutters across all project display container sections.
 
 ---
 
+## Update - 2026-03-15 11:11
+**Task**: docs: update installation instructions in readme
+
+Added setup guidelines and environment variables overview in README.md.
+
+---
+
