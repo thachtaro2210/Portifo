@@ -534,3 +534,10 @@ Simplified state management in Main.js by consolidating language toggles.
 
 ---
 
+## Update - 2026-03-15 17:15
+**Task**: feat: add translations for greeting and education
+
+Added English and Vietnamese translation resources for Greeting and EducationCard components.
+
+---
+
