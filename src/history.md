@@ -541,3 +541,10 @@ Added English and Vietnamese translation resources for Greeting and EducationCar
 
 ---
 
+## Update - 2026-03-21 14:58
+**Task**: feat: introduce language context and switcher
+
+Created StyleContext to manage selected language state globally across the application.
+
+---
+
