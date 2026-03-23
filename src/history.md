@@ -562,3 +562,10 @@ Fixed height styling of school logo images inside EducationCard component.
 
 ---
 
+## Update - 2026-03-23 21:10
+**Task**: docs: update installation instructions in readme
+
+Added setup guidelines and environment variables overview in README.md.
+
+---
+
