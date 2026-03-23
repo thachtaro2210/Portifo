@@ -555,3 +555,10 @@ Resolved overflow issue in Greeting titles by adjusting font sizes.
 
 ---
 
+## Update - 2026-03-23 11:25
+**Task**: fix: fix school card image height rendering
+
+Fixed height styling of school logo images inside EducationCard component.
+
+---
+
