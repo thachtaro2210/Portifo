@@ -569,3 +569,10 @@ Added setup guidelines and environment variables overview in README.md.
 
 ---
 
+## Update - 2026-03-30 12:07
+**Task**: feat: enable multi-language toggle for all sections
+
+Integrated translation helper in experience, projects, achievements, and contact sections.
+
+---
+
