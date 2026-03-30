@@ -576,3 +576,10 @@ Integrated translation helper in experience, projects, achievements, and contact
 
 ---
 
+## Update - 2026-03-30 17:30
+**Task**: docs: add screenshots to project gallery
+
+Updated documentation with links to current UI layouts.
+
+---
+
