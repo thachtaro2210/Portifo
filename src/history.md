@@ -583,3 +583,10 @@ Updated documentation with links to current UI layouts.
 
 ---
 
+## Update - 2026-04-03 13:20
+**Task**: feat: introduce language context and switcher
+
+Created StyleContext to manage selected language state globally across the application.
+
+---
+
