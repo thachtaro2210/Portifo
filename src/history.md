@@ -597,3 +597,10 @@ Bumped react-scripts and sass package dependencies in package.json.
 
 ---
 
+## Update - 2026-04-11 08:30
+**Task**: style: update theme color constants
+
+Updated _globalColor.scss variables for better contrast ratios in dark mode.
+
+---
+
