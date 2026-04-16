@@ -604,3 +604,10 @@ Updated _globalColor.scss variables for better contrast ratios in dark mode.
 
 ---
 
+## Update - 2026-04-16 11:40
+**Task**: style: optimize dark mode background contrast
+
+Modified body background color for a smoother dark mode experience.
+
+---
+
