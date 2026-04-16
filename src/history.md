@@ -611,3 +611,10 @@ Modified body background color for a smoother dark mode experience.
 
 ---
 
+## Update - 2026-04-16 14:10
+**Task**: docs: update installation instructions in readme
+
+Added setup guidelines and environment variables overview in README.md.
+
+---
+
