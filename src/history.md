@@ -632,3 +632,10 @@ Updated _globalColor.scss variables for better contrast ratios in dark mode.
 
 ---
 
+## Update - 2026-04-18 15:02
+**Task**: feat: add scientific research award to achievements
+
+Added Promising Award from Faculty Scientific Research with links to published paper.
+
+---
+
