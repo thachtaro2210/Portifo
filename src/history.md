@@ -625,3 +625,10 @@ Added custom Outfit Google font configuration inside index.css.
 
 ---
 
+## Update - 2026-04-18 12:16
+**Task**: style: update theme color constants
+
+Updated _globalColor.scss variables for better contrast ratios in dark mode.
+
+---
+
