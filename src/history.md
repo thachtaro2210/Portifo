@@ -639,3 +639,10 @@ Added Promising Award from Faculty Scientific Research with links to published p
 
 ---
 
+## Update - 2026-04-25 20:06
+**Task**: style: update theme color constants
+
+Updated _globalColor.scss variables for better contrast ratios in dark mode.
+
+---
+
