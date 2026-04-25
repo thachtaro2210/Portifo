@@ -646,3 +646,10 @@ Updated _globalColor.scss variables for better contrast ratios in dark mode.
 
 ---
 
+## Update - 2026-04-25 22:52
+**Task**: docs: update installation instructions in readme
+
+Added setup guidelines and environment variables overview in README.md.
+
+---
+
