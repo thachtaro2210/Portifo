@@ -653,3 +653,10 @@ Added setup guidelines and environment variables overview in README.md.
 
 ---
 
+## Update - 2026-05-04 21:06
+**Task**: feat: add translations for greeting and education
+
+Added English and Vietnamese translation resources for Greeting and EducationCard components.
+
+---
+
