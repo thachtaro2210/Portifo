@@ -674,3 +674,10 @@ Extracted t(parent, key) helper method to streamline translation logic in contai
 
 ---
 
+## Update - 2026-05-07 22:08
+**Task**: fix: fix school card image height rendering
+
+Fixed height styling of school logo images inside EducationCard component.
+
+---
+
