@@ -667,3 +667,10 @@ Bumped react-scripts and sass package dependencies in package.json.
 
 ---
 
+## Update - 2026-05-07 19:38
+**Task**: refactor: extract helper function for localization
+
+Extracted t(parent, key) helper method to streamline translation logic in containers.
+
+---
+
