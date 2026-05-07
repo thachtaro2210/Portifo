@@ -660,3 +660,10 @@ Added English and Vietnamese translation resources for Greeting and EducationCar
 
 ---
 
+## Update - 2026-05-07 12:54
+**Task**: chore: update dependencies versions
+
+Bumped react-scripts and sass package dependencies in package.json.
+
+---
+
