@@ -695,3 +695,10 @@ Fixed height styling of school logo images inside EducationCard component.
 
 ---
 
+## Update - 2026-05-08 22:44
+**Task**: feat: enable multi-language toggle for all sections
+
+Integrated translation helper in experience, projects, achievements, and contact sections.
+
+---
+
