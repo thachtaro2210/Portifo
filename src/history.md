@@ -688,3 +688,10 @@ Modified body background color for a smoother dark mode experience.
 
 ---
 
+## Update - 2026-05-08 17:28
+**Task**: fix: fix school card image height rendering
+
+Fixed height styling of school logo images inside EducationCard component.
+
+---
+
