@@ -681,3 +681,10 @@ Fixed height styling of school logo images inside EducationCard component.
 
 ---
 
+## Update - 2026-05-08 13:14
+**Task**: style: optimize dark mode background contrast
+
+Modified body background color for a smoother dark mode experience.
+
+---
+
