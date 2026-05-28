@@ -702,3 +702,10 @@ Integrated translation helper in experience, projects, achievements, and contact
 
 ---
 
+## Update - 2026-05-28 09:26
+**Task**: fix: correct Vietnamese translations in portfolio config
+
+Corrected typing mistakes and grammar in portfolio.js localization strings.
+
+---
+
