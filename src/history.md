@@ -716,3 +716,10 @@ Bumped react-scripts and sass package dependencies in package.json.
 
 ---
 
+## Update - 2026-05-28 17:58
+**Task**: fix: prevent text overlapping in mobile view
+
+Resolved overflow issue in Greeting titles by adjusting font sizes.
+
+---
+
