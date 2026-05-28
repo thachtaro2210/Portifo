@@ -709,3 +709,10 @@ Corrected typing mistakes and grammar in portfolio.js localization strings.
 
 ---
 
+## Update - 2026-05-28 11:49
+**Task**: chore: update dependencies versions
+
+Bumped react-scripts and sass package dependencies in package.json.
+
+---
+
