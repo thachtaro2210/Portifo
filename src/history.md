@@ -723,3 +723,10 @@ Resolved overflow issue in Greeting titles by adjusting font sizes.
 
 ---
 
+## Update - 2026-05-31 11:17
+**Task**: feat: add scientific research award to achievements
+
+Added Promising Award from Faculty Scientific Research with links to published paper.
+
+---
+
