@@ -737,3 +737,10 @@ Extracted t(parent, key) helper method to streamline translation logic in contai
 
 ---
 
+## Update - 2026-06-02 08:22
+**Task**: style: adjust margins and padding for mobile view
+
+Fine-tuned flex spacing and padding values for screen widths under 768px.
+
+---
+
