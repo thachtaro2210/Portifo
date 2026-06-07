@@ -744,3 +744,10 @@ Fine-tuned flex spacing and padding values for screen widths under 768px.
 
 ---
 
+## Update - 2026-06-07 11:33
+**Task**: style: adjust margins and padding for mobile view
+
+Fine-tuned flex spacing and padding values for screen widths under 768px.
+
+---
+
