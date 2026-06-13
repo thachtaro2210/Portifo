@@ -5,7 +5,6 @@ import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import LangSwitch from "../LangSwitch/LangSwitch";
 import StyleContext from "../../contexts/StyleContext";
 import {
-  greeting,
   workExperiences,
   skillsSection,
   openSource,
