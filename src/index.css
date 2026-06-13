@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@font-face {
+  font-family: "Agustina Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Agustina Regular"),
+    url("./assets/fonts/Agustina.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
+  font-display: swap;
+}
+
+:root {
+  --bg: #faf7f2;
+  --header-bg: rgba(250, 247, 242, 0.75);
+  --surface: #fffdf9;
+  --surface-muted: #f4eee7;
+  --surface-raised: #fffdf9;
+
+  --fg: #2b211e;
+  --muted: #7a6a61;
+  --subtle: #a49389;
+  --border: #e3d8d0;
+  --border-strong: #c9b8ae;
+
+  --primary: #c65a3a;
+  --primary-hover: #9f3f2a;
+  --primary-soft: #f5e3dc;
+  --control: #9f3f2a;
+  --on-control: #fffdf9;
+
+  --accent: #f2b66d;
+  --accent-soft: #fcebd4;
+
+  --success: #6b8e4e;
+  --success-soft: #e8f0df;
+  --warning: #e9a23b;
+  --warning-soft: #fbedcf;
+  --danger: #d64545;
+  --danger-soft: #f8dfdf;
+  --info: #7a6a61;
+  --info-soft: #eee8e4;
+
+  --font-display: 'Space Grotesk', 'Be Vietnam Pro', 'Segoe UI', sans-serif;
+  --font-body: 'Be Vietnam Pro', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  --shadow-sm: 0 1px 2px rgba(43, 33, 30, 0.06);
+  --shadow-md: 0 12px 32px rgba(43, 33, 30, 0.08);
+  --shadow-lg: 0 20px 48px rgba(43, 33, 30, 0.12);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+}
+
+.dark-mode {
+  --bg: #130e0c;
+  --header-bg: rgba(26, 20, 16, 0.75);
+  --surface: #1e1715;
+  --surface-muted: #2a201c;
+  --surface-raised: #1e1715;
+
+  --fg: #faf7f2;
+  --muted: #a49389;
+  --subtle: #7a6a61;
+  --border: #332723;
+  --border-strong: #4a3a34;
+
+  --primary: #c65a3a;
+  --primary-hover: #e59e56;
+  --primary-soft: #2d1d19;
+  --control: #c65a3a;
+  --on-control: #faf7f2;
+
+  --accent: #f2b66d;
+  --accent-soft: #35261d;
+
+  --success: #6b8e4e;
+  --success-soft: #1d2618;
+  --warning: #e9a23b;
+  --warning-soft: #382813;
+  --danger: #d64545;
+  --danger-soft: #381616;
+  --info: #a49389;
+  --info-soft: #231c1a;
+}
+
+code {
+  font-family: var(--font-mono);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg);
+  color: var(--fg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  html,
+  body {
+    font-size: 16px;
+    line-height: normal;
+  }
+}
+
+/* GPU Hardware Acceleration for Interactive Cards & Buttons */
+.repo-card-div,
+.experience-card,
+.achievement-card,
+.main-button,
+.sub-button,
+.software-skill-inline,
+.theme-toggle-btn,
+.social-media-div a {
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  will-change: transform, opacity;
+}

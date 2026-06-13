@@ -1,0 +1,7 @@
+@import "../_globalColor";
+
+.dark-mode {
+  background-color: transparent;
+  color: $textColorDark;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}

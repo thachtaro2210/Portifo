@@ -1,0 +1,90 @@
+/* Change colors in this file to style to your needs on a global level. 
+Certain colors are used for different and multiply types of elements. 
+For greater control over colors visit each components .scss file. */
+
+// button colors
+$buttonColor: var(--primary);
+$buttonHover: var(--primary-hover);
+$topButtonHover: var(--primary-hover);
+
+// text colors light theme
+$titleColor: var(--fg);
+$textColor: var(--fg);
+$subTitle: var(--muted);
+$cardSubtitle: var(--muted);
+$talkCardSubTitle: var(--muted);
+$blogCardTitleColor: var(--fg);
+
+// text color dark theme
+$textColorDark: var(--fg);
+
+// toggle switch colors
+$toggleCheck: var(--accent);
+$toggleSwitchSliderBG: var(--border);
+
+// githubRepo specific colors
+$githubRepoCardLanguageColorBG: var(--primary);
+$githubRepoCardColor: var(--muted);
+$githubRepoCardRepoCardStatsColor: var(--muted);
+$githubRepoCardRepoNameColor: var(--fg);
+$githubProfileCardLocationTS: var(--accent);
+$githubProfileCardBorder: var(--border);
+
+// light background colors
+$lightBackground1: var(--bg);
+$lightBackground2: var(--surface);
+$lightBackground3: var(--surface-muted);
+$blogCardContainerColor: var(--surface-muted);
+// dark background colors
+$darkBackground: var(--bg);
+
+// light theme box shadows
+$lightBoxShadowDark: rgba(43, 33, 30, 0.2);
+$lightBoxShadow: rgba(43, 33, 30, 0.1);
+$lightBoxShadowDarker: rgba(43, 33, 30, 0.3);
+
+// dark theme box shadows
+$darkBoxShadow: var(--border);
+$darkBoxShadow2: var(--border-strong);
+
+// linear gradients
+$experienceCardBlurredDivLG: linear-gradient(
+  rgba(19, 14, 12, 0.4),
+  rgba(19, 14, 12, 0.2)
+);
+$experienceCardBannerLG: linear-gradient(
+  rgba(19, 14, 12, 0.7),
+  rgba(19, 14, 12, 0.5)
+);
+
+// borders
+$progressBarBackground: var(--surface-muted);
+$lightBorder1: var(--border);
+$educationCardBorder: var(--border-strong);
+
+// hovers
+$achievementCertificateCardHoverDark: var(--surface-muted);
+$blogCardHoverSmallColor: var(--surface-muted);
+$headerHoverBG: var(--surface-muted);
+$contactDetailHoverTS: var(--muted);
+
+// misc backgrounds
+$progressBarSpanBG: var(--primary);
+$iconBackground: var(--fg);
+$appHeaderBG: var(--bg);
+
+// misc colors
+$skillsColor: var(--primary);
+$appLink: var(--primary);
+
+// social media icons
+$faceBook: #3b5998;
+$linkedin: #0e76a8;
+$github: #333;
+$gitlab: #fca326;
+$google: #ea4335;
+$twitter: #1da1f2;
+$medium: #000;
+$stackoverflow: #f48024;
+$instagram: #c13584;
+$kaggle: #20beff;
