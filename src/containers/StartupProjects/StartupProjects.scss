@@ -16,6 +16,9 @@
   color: $cardSubtitle;
   font-size: 17px;
   line-height: 1.5rem;
+  white-space: pre-line;
+  text-align: left;
+  margin: 12px 0 20px 0;
 }
 .project-card {
   display: flex;
@@ -62,6 +65,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem 1rem;
+  align-items: start;
 }
 
 .project-card-footer span.project-tag {
@@ -86,5 +90,24 @@
   .project-subtitle {
     font-size: 16px;
     text-align: center;
+  }
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: $appLink;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 8px 0;
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  transition: opacity 0.2s;
+  outline: none;
+
+  &:hover {
+    opacity: 0.8;
   }
 }

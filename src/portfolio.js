@@ -252,6 +252,25 @@ const bigProjects = {
   subtitle_vi: "MỘT SỐ KHỞI NGHIỆP VÀ CÔNG TY MÀ MÌNH ĐÃ THAM GIA XÂY DỰNG CÔNG NGHỆ",
   projects: [
     {
+      image: require("./assets/images/flower_ecom_logo.png"),
+      projectName: "Flower E-Commerce System",
+      projectName_vi: "Hệ thống Cửa hàng Hoa trực tuyến (Flower E-Commerce)",
+      projectDesc: "Timeline: December 2024 - March 2025\n\nDescription: A specialized e-commerce web application designed for online flower shopping, featuring gift note personalization, coupon system, online payment gateway (VNPay) integration, and real-time order tracking.\n\nTech Stack:\n- Frontend: React.js (Vite), Context API, Custom Hooks, Vanilla CSS (Responsive Design, Light/Dark Modes with Topographic SVG accents).\n- Backend: Node.js, Express.js, JWT Authentication, Cloudinary API.\n- Database: MongoDB, Mongoose ODM.\n- Payment: VNPay Online Payment Gateway.\n\nKey Features:\n- Premium Aesthetics: Smooth Earthy Warm design with seamless Light/Dark mode transitions and dynamic UI elements.\n- Smart Gift Wrapper: Allows customers to select delivery time slots and attach personalized greeting notes to their orders.\n- Dynamic Coupon System: Automatic client-side and server-side coupon calculations supporting discounts and free shipping.\n- Visual Order Stepper: An interactive order progress timeline from placement to final delivery.\n- User Reviews: Tabbed review and rating systems on product detail pages.",
+      projectDesc_vi: "Thời gian thực hiện: Tháng 12/2024 - Tháng 3/2025\n\nMô tả dự án: Website Thương mại Điện tử chuyên biệt phục vụ mua sắm hoa tươi, hỗ trợ đặt quà tặng kèm thiệp chúc mừng, thanh toán trực tuyến qua cổng VNPay và quản lý trạng thái đơn hàng thời gian thực.\n\nCông nghệ sử dụng (Tech Stack):\n- Frontend: React.js (Vite), Context API (Quản lý State), Custom Hooks, CSS Vanilla (Thiết kế Responsive & Light/Dark Theme, hình Contours Topography nền).\n- Backend: Node.js, Express.js, JWT Authentication, Cloudinary API (Quản lý hình ảnh).\n- Database: MongoDB, Mongoose ODM.\n- Thanh toán: Tích hợp Cổng thanh toán quốc tế VNPay.\n\nCác tính năng nổi bật (Key Features):\n- Trải nghiệm người dùng cao cấp: Giao diện thiết kế theo phong cách ấm áp (Earthy Warm), hỗ trợ Light/Dark Mode mượt mà kết hợp hiệu ứng topography độc đáo.\n- Tùy chọn Quà tặng thông minh: Hỗ trợ khách hàng gửi tặng hoa kèm thiệp chúc mừng (ghi lời chúc) và chọn khung giờ giao hàng mong muốn.\n- Hệ thống Mã giảm giá: Áp dụng mã giảm giá trực tiếp tại giỏ hàng (FLOWERNEW, XMAS20,...) với cơ chế tự động tính tiền & freeship.\n- Theo dõi đơn hàng trực quan: Trình stepper trực quan theo dõi tiến trình đơn hàng (Đã đặt -> Xác nhận -> Đang giao -> Đã giao).\n- Hệ thống Đánh giá & Bình luận: Cho phép người dùng đánh giá sao và gửi nhận xét thực tế về sản phẩm.",
+      footerLink: [
+        {
+          name: "Client Repo (FE)",
+          name_vi: "Mã nguồn Frontend (FE)",
+          url: "https://github.com/thachtaro2210/Flower-Ecom-Client"
+        },
+        {
+          name: "Server Repo (BE)",
+          name_vi: "Mã nguồn Backend (BE)",
+          url: "https://github.com/thachtaro2210/Flower-Ecom-Server"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/saayaHealthLogo.webp"),
       projectName: "Saayahealth",
       projectName_vi: "Saayahealth",
