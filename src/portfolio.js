@@ -54,8 +54,8 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   title_vi: "Mình làm được những gì",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-  subTitle_vi: "LẬP TRÌNH VIÊN FULL STACK ĐAM MÊ KHÁM PHÁ VÀ CHINH PHỤC MỌI CÔNG NGHỆ",
+  subTitle: "TECH STACK",
+  subTitle_vi: "TECH STACK",
   skills: [
     "Build interactive user interfaces for web and mobile apps",
     "Develop progressive web applications (PWA)",
@@ -178,13 +178,15 @@ const workExperiences = {
       company_vi: "Asia Soft",
       date: "July 2025 – September 2025",
       date_vi: "Tháng 7, 2025 – Tháng 9, 2025",
-      desc: "Designed and developed high-performance backend APIs and databases.",
-      desc_vi: "Thiết kế và phát triển các hệ thống API backend và cơ sở dữ liệu hiệu năng cao.",
+      desc: "",
+      desc_vi: "",
       descBullets: [
+        "Designed and developed high-performance backend APIs and databases.",
         "Built RESTful APIs using Java Spring Boot and Node.js",
         "Optimized queries and schemas for PostgreSQL and MongoDB"
       ],
       descBullets_vi: [
+        "Thiết kế và phát triển các hệ thống API backend và cơ sở dữ liệu hiệu năng cao.",
         "Xây dựng các RESTful API sử dụng Java Spring Boot và Node.js",
         "Tối ưu hóa truy vấn và cấu trúc cơ sở dữ liệu PostgreSQL và MongoDB"
       ]
