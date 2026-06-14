@@ -36,7 +36,7 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/thachtaro",
+  github: "https://github.com/thachtaro2210",
   linkedin: "https://www.linkedin.com/in/thachtaro/?skipRedirect=true",
   gmail: "thatchjeager@gmail.com",
   leetcode: "https://leetcode.com/u/thachtaro/",
