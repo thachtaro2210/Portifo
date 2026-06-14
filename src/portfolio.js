@@ -327,35 +327,6 @@ const bigProjects = {
           url: "https://github.com/thachtaro2210/Flower-Ecom-Server"
         }
       ]
-    },
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectName_vi: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      projectDesc_vi: "Nền tảng hỗ trợ và chăm sóc sức khỏe tinh thần trực tuyến cho các tổ chức và doanh nghiệp.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          name_vi: "Ghé thăm trang web",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectName_vi: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      projectDesc_vi: "Nền tảng công nghệ giúp kết nối và tự động hóa các quy trình tuyển dụng thông minh.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          name_vi: "Ghé thăm trang web",
-          url: "http://nextu.se/"
-        }
-      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
