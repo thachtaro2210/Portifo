@@ -24,10 +24,10 @@ const greeting = {
   title: "Hi all, I'm Tống Phan Kim Thạch",
   title_vi: "Xin chào, mình là Tống Phan Kim Thạch",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Software Developer 🚀 specializing in building high-performance Backend systems with Java / Spring Boot / Node.js and modern Frontends with ReactJS / Tailwind CSS, along with cloud database integration."
   ),
   subTitle_vi: emoji(
-    "Một nhà phát triển phần mềm Full Stack đầy nhiệt huyết 🚀 chuyên phát triển các ứng dụng Web và Mobile với JavaScript / ReactJS / NodeJS / React Native cùng các thư viện và framework hiện đại khác."
+    "Một nhà phát triển phần mềm nhiệt huyết 🚀 chuyên xây dựng hệ thống Backend vững chắc với Java / Spring Boot / Node.js và giao diện Frontend với ReactJS / Tailwind CSS, kết hợp dịch vụ đám mây và cơ sở dữ liệu."
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -57,22 +57,14 @@ const skillsSection = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   subTitle_vi: "LẬP TRÌNH VIÊN FULL STACK ĐAM MÊ KHÁM PHÁ VÀ CHINH PHỤC MỌI CÔNG NGHỆ",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    "Build interactive user interfaces for web and mobile apps",
+    "Develop progressive web applications (PWA)",
+    "Integrate cloud and database services (AWS S3/EC2, DigitalOcean, SQL/NoSQL)"
   ],
   skills_vi: [
-    emoji(
-      "⚡ Phát triển các giao diện người dùng (Front end / UI) trực quan, có tính tương tác cao cho các ứng dụng web và di động"
-    ),
-    emoji("⚡ Tối ưu hóa ứng dụng web tiến trình (PWA) trên cả cấu trúc ứng dụng Single Page App (SPA) và thông thường"),
-    emoji(
-      "⚡ Tích hợp mượt mà các dịch vụ bên thứ ba như Firebase, AWS và Digital Ocean"
-    )
+    "Xây dựng giao diện Web và Mobile tương tác cao",
+    "Phát triển ứng dụng web tiến trình (PWA)",
+    "Tích hợp các dịch vụ đám mây và cơ sở dữ liệu (AWS, DigitalOcean, SQL/NoSQL)"
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -80,56 +72,44 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Spring Boot",
+      iconifyClassname: "simple-icons:springboot"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
+      skillName: "React JS",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
+      skillName: "Node JS",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "PostgreSQL",
+      iconifyClassname: "simple-icons:postgresql"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "MongoDB",
+      iconifyClassname: "simple-icons:mongodb"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "DigitalOcean",
+      iconifyClassname: "simple-icons:digitalocean"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "AWS S3",
+      iconifyClassname: "simple-icons:amazons3"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "AWS EC2",
+      iconifyClassname: "simple-icons:amazonec2"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Tailwind CSS",
+      iconifyClassname: "simple-icons:tailwindcss"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -192,45 +172,22 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      role_vi: "Kỹ sư Phần mềm",
-      company: "Facebook",
-      company_vi: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      date_vi: "Tháng 6, 2018 – Hiện tại",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      desc_vi: "Phát triển và tối ưu hóa các tính năng trên trang chủ Facebook, cải thiện hiệu suất tải trang và tương tác người dùng.",
+      role: "Backend Developer",
+      role_vi: "Lập trình viên Backend",
+      company: "Asia Soft",
+      company_vi: "Asia Soft",
+      date: "July 2025 – September 2025",
+      date_vi: "Tháng 7, 2025 – Tháng 9, 2025",
+      desc: "Designed and developed high-performance backend APIs and databases.",
+      desc_vi: "Thiết kế và phát triển các hệ thống API backend và cơ sở dữ liệu hiệu năng cao.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Built RESTful APIs using Java Spring Boot and Node.js",
+        "Optimized queries and schemas for PostgreSQL and MongoDB"
       ],
       descBullets_vi: [
-        "Phát triển các giao diện người dùng bằng ReactJS",
-        "Tối ưu hóa API GraphQL tăng tốc độ phản hồi 20%"
+        "Xây dựng các RESTful API sử dụng Java Spring Boot và Node.js",
+        "Tối ưu hóa truy vấn và cấu trúc cơ sở dữ liệu PostgreSQL và MongoDB"
       ]
-    },
-    {
-      role: "Front-End Developer",
-      role_vi: "Lập trình viên Front-End",
-      company: "Quora",
-      company_vi: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      date_vi: "Tháng 5, 2017 – Tháng 5, 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      desc_vi: "Xây dựng các thành phần UI tái sử dụng, cải thiện trải nghiệm đọc và tương tác của người dùng trên nền tảng hỏi đáp Quora."
-    },
-    {
-      role: "Software Engineer Intern",
-      role_vi: "Thực tập sinh Kỹ sư Phần mềm",
-      company: "Airbnb",
-      company_vi: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      date_vi: "Tháng 1, 2015 – Tháng 9, 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      desc_vi: "Tham gia nghiên cứu và phát triển hệ thống tìm kiếm phòng nghỉ, tối ưu hóa các bộ lọc và tìm kiếm thông minh."
     }
   ]
 };

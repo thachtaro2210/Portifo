@@ -28,6 +28,24 @@
   color: $subTitle;
 }
 
+.skills-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+
+  &::before {
+    content: "•";
+    position: absolute;
+    left: 5px;
+    top: -2px;
+    color: $skillsColor;
+    font-size: 24px;
+    line-height: 1;
+  }
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .skills-heading {

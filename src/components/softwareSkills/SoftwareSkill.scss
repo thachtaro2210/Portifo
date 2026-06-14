@@ -13,19 +13,29 @@
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
-}
 
-.software-skill-inline > i {
-  color: $subTitle;
-}
+  i, .iconify, svg {
+    color: $subTitle;
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
 
-.software-skill-inline > i:hover {
-  color: $skillsColor;
-}
-.software-skill-inline > p {
-  color: $subTitle;
-  font-size: 10px;
-}
-.software-skill-inline > i:hover ~ p {
-  color: $skillsColor;
+  p {
+    color: $subTitle;
+    font-size: 10px;
+    margin-top: 5px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &:hover {
+    i, .iconify, svg {
+      color: $skillsColor;
+      transform: scale(1.15);
+    }
+    p {
+      color: $skillsColor;
+    }
+  }
 }
