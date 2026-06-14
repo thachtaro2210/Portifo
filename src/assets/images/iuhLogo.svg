@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Base U-shape -->
+  <path d="M 18,37.5 L 18,72.5 A 15,15 0 0 0 33,87.5 L 67,87.5 A 15,15 0 0 0 82,72.5 L 82,37.5 L 62,37.5 L 62,67.5 A 5,5 0 0 1 57,72.5 L 43,72.5 A 5,5 0 0 1 38,67.5 L 38,37.5 Z" fill="#0d3b85" />
+  
+  <!-- Left column: Yellow Chevron -->
+  <path d="M 28,17.5 L 18,32.5 L 28,25.5 L 38,32.5 Z" fill="#fcb016" />
+  
+  <!-- Right column: Top Blue Chevron -->
+  <path d="M 72,12.5 L 62,25.5 L 72,19.5 L 82,25.5 Z" fill="#0d3b85" />
+  
+  <!-- Right column: Bottom Blue Chevron -->
+  <path d="M 72,24.5 L 62,37.5 L 72,31.5 L 82,37.5 Z" fill="#0d3b85" />
+</svg>

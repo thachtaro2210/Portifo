@@ -63,7 +63,7 @@ const skillsSection = {
   ],
   skills_vi: [
     "Xây dựng giao diện Web và Mobile tương tác cao",
-    "Phát triển ứng dụng web tiến trình (PWA)",
+    "Phát triển Web, Mobile",
     "Tích hợp các dịch vụ đám mây và cơ sở dữ liệu (AWS, DigitalOcean, SQL/NoSQL)"
   ],
 
