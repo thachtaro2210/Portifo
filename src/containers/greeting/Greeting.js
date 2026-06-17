@@ -38,14 +38,19 @@ export default function Greeting() {
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text={isVi ? "Liên hệ với tôi" : "Contact me"} href="#contact" />
+                <Button
+                  text={isVi ? "Liên hệ với tôi" : "Contact me"}
+                  href="#contact"
+                />
                 {greeting.resumeLink && (
                   <a
                     href={require("./resume.pdf")}
                     download="Resume.pdf"
                     className="download-link-button"
                   >
-                    <Button text={isVi ? "Tải xuống CV" : "Download my resume"} />
+                    <Button
+                      text={isVi ? "Tải xuống CV" : "Download my resume"}
+                    />
                   </a>
                 )}
               </div>
@@ -55,10 +60,7 @@ export default function Greeting() {
             {illustration.animated ? (
               <DisplayLottie animationData={landingPerson} />
             ) : (
-              <img
-                alt="man sitting on table"
-                src={manOnTable}
-              ></img>
+              <img alt="man sitting on table" src={manOnTable}></img>
             )}
           </div>
         </div>

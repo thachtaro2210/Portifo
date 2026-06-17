@@ -167,7 +167,7 @@
   transition: opacity 0.2s, transform 0.2s;
   line-height: 1;
   padding: 0;
-  
+
   &:hover {
     opacity: 1;
     transform: scale(1.1);
@@ -283,13 +283,23 @@
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideUp {
-  from { transform: translateY(30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Scrollbar styling for modal body */

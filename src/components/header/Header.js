@@ -38,7 +38,7 @@ function Header() {
             strokeWidth="2.5"
             strokeLinecap="round"
             strokeLinejoin="round"
-            style={{ marginRight: '8px', transition: 'stroke 0.2s ease' }}
+            style={{marginRight: "8px", transition: "stroke 0.2s ease"}}
           >
             <polygon points="12 2 2 7 12 12 22 7 12 2" />
             <polyline points="2 17 12 22 22 17" />
@@ -63,7 +63,9 @@ function Header() {
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">{isVi ? "Kinh nghiệm" : "Work Experiences"}</a>
+              <a href="#experience">
+                {isVi ? "Kinh nghiệm" : "Work Experiences"}
+              </a>
             </li>
           )}
           {viewOpenSource && (

@@ -49,7 +49,15 @@ export default function ExperienceCard({cardInfo, isDark}) {
           />
         ) : (
           <div className="experience-roundedimg experience-roundedimg-text">
-            <span>{cardInfo.company ? cardInfo.company.split(" ").map(w => w[0]).join("").toUpperCase() : ""}</span>
+            <span>
+              {cardInfo.company
+                ? cardInfo.company
+                    .split(" ")
+                    .map(w => w[0])
+                    .join("")
+                    .toUpperCase()
+                : ""}
+            </span>
           </div>
         )}
       </div>

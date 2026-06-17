@@ -4,7 +4,7 @@ import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
-const formatInlineText = (text) => {
+const formatInlineText = text => {
   if (text.includes(":") && !text.trim().startsWith("http")) {
     const colonIdx = text.indexOf(":");
     const prefix = text.substring(0, colonIdx).trim();
@@ -20,26 +20,28 @@ const formatInlineText = (text) => {
   return text;
 };
 
-const renderFormattedDesc = (descText) => {
+const renderFormattedDesc = descText => {
   if (!descText) return null;
-  
+
   const lines = descText.split("\n");
   let listBuffer = [];
   const renderedElements = [];
-  
-  const flushList = (key) => {
+
+  const flushList = key => {
     if (listBuffer.length > 0) {
       renderedElements.push(
         <ul key={`list-${key}`} className="modal-desc-list">
           {listBuffer.map((item, i) => (
-            <li key={i} className="modal-desc-list-item">{formatInlineText(item)}</li>
+            <li key={i} className="modal-desc-list-item">
+              {formatInlineText(item)}
+            </li>
           ))}
         </ul>
       );
       listBuffer = [];
     }
   };
-  
+
   lines.forEach((line, idx) => {
     const trimmed = line.trim();
     if (trimmed.startsWith("- ")) {
@@ -47,15 +49,23 @@ const renderFormattedDesc = (descText) => {
     } else {
       flushList(idx);
       if (trimmed.endsWith(":")) {
-        renderedElements.push(<h4 key={idx} className="modal-desc-heading">{trimmed}</h4>);
+        renderedElements.push(
+          <h4 key={idx} className="modal-desc-heading">
+            {trimmed}
+          </h4>
+        );
       } else if (trimmed === "") {
         // Skip empty lines
       } else {
-        renderedElements.push(<p key={idx} className="modal-desc-para">{formatInlineText(line)}</p>);
+        renderedElements.push(
+          <p key={idx} className="modal-desc-para">
+            {formatInlineText(line)}
+          </p>
+        );
       }
     }
   });
-  
+
   flushList(lines.length);
   return renderedElements;
 };
@@ -72,7 +82,7 @@ export default function StartupProject() {
   }
 
   useEffect(() => {
-    const handleKeyDown = (e) => {
+    const handleKeyDown = e => {
       if (e.key === "Escape") {
         setActiveProject(null);
       }
@@ -135,7 +145,9 @@ export default function StartupProject() {
                     ) : null}
                     <div className="project-detail">
                       <h5
-                        className={isDark ? "dark-mode card-title" : "card-title"}
+                        className={
+                          isDark ? "dark-mode card-title" : "card-title"
+                        }
                       >
                         {t(project, "projectName")}
                       </h5>
@@ -149,7 +161,7 @@ export default function StartupProject() {
                       <button
                         type="button"
                         className="view-details-btn"
-                        onClick={(e) => {
+                        onClick={e => {
                           e.preventDefault();
                           setActiveProject(project);
                         }}
@@ -163,7 +175,9 @@ export default function StartupProject() {
                               <span
                                 key={i}
                                 className={
-                                  isDark ? "dark-mode project-tag" : "project-tag"
+                                  isDark
+                                    ? "dark-mode project-tag"
+                                    : "project-tag"
                                 }
                                 onClick={() => openUrlInNewTab(link.url)}
                               >
@@ -188,7 +202,7 @@ export default function StartupProject() {
             className={`modal-body ${
               isDark ? "modal-body-dark" : "modal-body-light"
             }`}
-            onClick={(e) => e.stopPropagation()}
+            onClick={e => e.stopPropagation()}
           >
             <button
               className="modal-close-btn"

@@ -14,7 +14,9 @@ export default function StackProgress() {
       <Fade bottom duration={1000} distance="20px">
         <div className="skills-container">
           <div className="skills-bar">
-            <h1 className="skills-heading">{isVi ? "Độ thông thạo" : "Proficiency"}</h1>
+            <h1 className="skills-heading">
+              {isVi ? "Độ thông thạo" : "Proficiency"}
+            </h1>
             {techStack.experience.map((exp, i) => {
               const progressStyle = {
                 width: exp.progressPercentage
@@ -34,10 +36,7 @@ export default function StackProgress() {
             {illustration.animated ? (
               <DisplayLottie animationData={Build} />
             ) : (
-              <img
-                alt="Skills"
-                src={skillProgressSvg}
-              />
+              <img alt="Skills" src={skillProgressSvg} />
             )}
           </div>
         </div>

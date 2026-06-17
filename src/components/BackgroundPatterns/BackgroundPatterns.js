@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function BackgroundPatterns({ isDark }) {
+export default function BackgroundPatterns({isDark}) {
   return (
     <div
       style={{
@@ -11,7 +11,7 @@ export default function BackgroundPatterns({ isDark }) {
         overflow: "hidden",
         transform: "translate3d(0, 0, 0)",
         backfaceVisibility: "hidden",
-        willChange: "transform",
+        willChange: "transform"
       }}
     >
       {/* ═══ DARK THEME ═══ */}
@@ -21,7 +21,7 @@ export default function BackgroundPatterns({ isDark }) {
           inset: 0,
           opacity: isDark ? 1 : 0,
           transition: "opacity 0.7s ease-in-out",
-          pointerEvents: isDark ? "auto" : "none",
+          pointerEvents: isDark ? "auto" : "none"
         }}
       >
         {/* Dark gradient base */}
@@ -30,7 +30,7 @@ export default function BackgroundPatterns({ isDark }) {
             position: "absolute",
             inset: 0,
             background:
-              "linear-gradient(160deg, #1a1410 0%, #2b211e 35%, #3d2e26 65%, #4a3228 100%)",
+              "linear-gradient(160deg, #1a1410 0%, #2b211e 35%, #3d2e26 65%, #4a3228 100%)"
           }}
         />
 
@@ -39,12 +39,12 @@ export default function BackgroundPatterns({ isDark }) {
           style={{
             position: "absolute",
             inset: 0,
-            color: "#faf7f2",
+            color: "#faf7f2"
           }}
         >
           <svg
             className="absolute inset-0 h-full w-full"
-            style={{ width: "100%", height: "100%" }}
+            style={{width: "100%", height: "100%"}}
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
           >
@@ -181,7 +181,7 @@ export default function BackgroundPatterns({ isDark }) {
             borderRadius: "50%",
             background:
               "radial-gradient(circle, rgba(198,90,58,0.15) 0%, transparent 60%)",
-            pointerEvents: "none",
+            pointerEvents: "none"
           }}
         />
         <div
@@ -194,7 +194,7 @@ export default function BackgroundPatterns({ isDark }) {
             borderRadius: "50%",
             background:
               "radial-gradient(circle, rgba(242,182,109,0.10) 0%, transparent 60%)",
-            pointerEvents: "none",
+            pointerEvents: "none"
           }}
         />
         <div
@@ -207,7 +207,7 @@ export default function BackgroundPatterns({ isDark }) {
             borderRadius: "50%",
             background:
               "radial-gradient(circle, rgba(107,142,78,0.06) 0%, transparent 60%)",
-            pointerEvents: "none",
+            pointerEvents: "none"
           }}
         />
 
@@ -218,7 +218,7 @@ export default function BackgroundPatterns({ isDark }) {
             inset: 0,
             opacity: 0.03,
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
-            pointerEvents: "none",
+            pointerEvents: "none"
           }}
         />
       </div>
@@ -230,14 +230,14 @@ export default function BackgroundPatterns({ isDark }) {
           inset: 0,
           opacity: isDark ? 0 : 1,
           transition: "opacity 0.7s ease-in-out",
-          pointerEvents: isDark ? "none" : "auto",
+          pointerEvents: isDark ? "none" : "auto"
         }}
       >
         <div
           style={{
             position: "absolute",
             inset: 0,
-            backgroundColor: "var(--bg)",
+            backgroundColor: "var(--bg)"
           }}
         />
 
@@ -248,7 +248,7 @@ export default function BackgroundPatterns({ isDark }) {
             inset: 0,
             height: "100%",
             width: "100%",
-            opacity: 0.035,
+            opacity: 0.035
           }}
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
@@ -293,7 +293,7 @@ export default function BackgroundPatterns({ isDark }) {
             inset: 0,
             background:
               "radial-gradient(ellipse 70% 60% at 80% 90%, rgba(198,90,58,0.10) 0%, transparent 70%)",
-            pointerEvents: "none",
+            pointerEvents: "none"
           }}
         />
         <div
@@ -302,7 +302,7 @@ export default function BackgroundPatterns({ isDark }) {
             inset: 0,
             background:
               "radial-gradient(ellipse 50% 50% at 10% 20%, rgba(242,182,109,0.08) 0%, transparent 70%)",
-            pointerEvents: "none",
+            pointerEvents: "none"
           }}
         />
       </div>

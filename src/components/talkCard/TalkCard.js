@@ -16,12 +16,20 @@ export default function TalkCard({talkDetails}) {
 
           <div className="card-footer-button-div">
             {talkDetails.slides_url && (
-              <a href={talkDetails.slides_url} target="_" className="talk-button">
+              <a
+                href={talkDetails.slides_url}
+                target="_"
+                className="talk-button"
+              >
                 {talkDetails.isVi ? "Trình chiếu" : "Slides"}
               </a>
             )}
             {talkDetails.event_url && (
-              <a href={talkDetails.event_url} target="_" className="talk-button">
+              <a
+                href={talkDetails.event_url}
+                target="_"
+                className="talk-button"
+              >
                 {talkDetails.isVi ? "Sự kiện" : "Event"}
               </a>
             )}
