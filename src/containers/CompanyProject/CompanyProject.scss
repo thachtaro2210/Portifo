@@ -1,0 +1,323 @@
+.company-subtitle {
+  color: var(--muted);
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  margin: 0 0 2rem;
+}
+.company-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 2.5rem;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 50px -30px rgba(0, 0, 0, 0.35);
+}
+.company-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.9rem;
+}
+.company-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary);
+  background: rgba(198, 90, 58, 0.14);
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+.company-status {
+  font-size: 12px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+.company-name {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--fg);
+  margin: 0 0 0.4rem;
+}
+.company-role {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0 0 1rem;
+}
+.company-summary {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+  margin: 0 0 1.5rem;
+}
+.company-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.company-stat {
+  display: flex;
+  flex-direction: column;
+  strong {
+    font-size: 28px;
+    line-height: 1;
+    color: var(--fg);
+  }
+  span {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+}
+.company-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1.5rem;
+}
+.company-chip {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: var(--surface-muted);
+  color: var(--fg);
+}
+.company-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.company-btn {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0.65rem 1.3rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--fg);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s;
+  &:hover {
+    transform: translateY(-2px);
+    background: var(--surface-muted);
+  }
+  &.primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+    &:hover {
+      background: var(--primary-hover);
+    }
+  }
+}
+.company-preview {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface-muted);
+  box-shadow: 0 24px 50px -24px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  background: #fff;
+  img {
+    display: block;
+    width: 70%;
+    max-width: 360px;
+    height: auto;
+  }
+}
+.browser-bar {
+  display: flex;
+  gap: 6px;
+  padding: 10px 12px;
+  background: var(--surface-muted);
+  border-bottom: 1px solid var(--border);
+  i {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+  }
+}
+.preview-hint {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* modal */
+.cp-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: cpFade 0.25s ease-out;
+}
+.cp-modal {
+  position: relative;
+  width: min(1000px, 94vw);
+  max-height: 92vh;
+  overflow-y: auto;
+  background: var(--surface);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  animation: cpUp 0.3s ease-out;
+}
+.cp-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+}
+.cp-stage {
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+.cp-media {
+  display: block;
+  width: 100%;
+  max-height: 58vh;
+  object-fit: contain;
+}
+.cp-thumbs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 12px 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.cp-thumb {
+  flex: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  &.active {
+    color: #fff;
+    background: var(--primary);
+    border-color: var(--primary);
+  }
+}
+.cp-body {
+  padding: 1.75rem 2rem 2.25rem;
+}
+.cp-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 0.3rem;
+}
+.cp-text {
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 0;
+}
+.cp-h {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 1.75rem 0 0.8rem;
+}
+.cp-scope {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+}
+.cp-scope-group {
+  background: var(--surface-muted);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  strong {
+    font-size: 14px;
+  }
+  ul {
+    margin: 0.5rem 0 0;
+    padding-left: 1.1rem;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+}
+.cp-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem 1.5rem;
+}
+.cp-highlight {
+  strong {
+    font-size: 15px;
+  }
+  p {
+    margin: 0.25rem 0 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+}
+
+@keyframes cpFade {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes cpUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+
+@media (max-width: 900px) {
+  .company-card {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+  .company-name {
+    font-size: 24px;
+  }
+  .cp-body {
+    padding: 1.25rem;
+  }
+}
