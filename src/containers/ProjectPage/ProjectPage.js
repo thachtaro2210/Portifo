@@ -150,9 +150,53 @@ export default function ProjectPage({id}) {
         <section className="pp-section">{renderDesc(desc)}</section>
       ) : null}
 
+      {(p.story || []).map((s, si) => (
+        <section key={s.title} className="pp-section">
+          <h2 className="pp-h2">
+            <span className="pp-num">{si + 1}</span>
+            {t(s, "title")}
+          </h2>
+          {s.intro ? <p className="pp-p">{t(s, "intro")}</p> : null}
+          {s.items ? (
+            <div className="pp-items">
+              {s.items.map((it, i) => (
+                <div key={it.title} className="pp-item">
+                  <span className="pp-item-mark">
+                    {s.numbered ? i + 1 : "•"}
+                  </span>
+                  <div>
+                    <strong>{t(it, "title")}</strong>
+                    <p>{t(it, "desc")}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : null}
+          {s.flows ? (
+            <div className="pp-flows">
+              {s.flows.map(f => (
+                <div key={f.title} className="pp-flow">
+                  <span className="pp-flow-name">{t(f, "title")}</span>
+                  <div className="pp-flow-steps">
+                    {t(f, "steps").map((st, i) => (
+                      <React.Fragment key={st}>
+                        {i > 0 ? <span className="pp-arrow">→</span> : null}
+                        <span className="pp-step">{st}</span>
+                      </React.Fragment>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : null}
+        </section>
+      ))}
+
       {p.scope ? (
         <section className="pp-section">
-          <h2 className="pp-h2">{isVi ? "Phạm vi" : "Scope"}</h2>
+          <h2 className="pp-h2">
+            {isVi ? "Phạm vi chức năng" : "Functional scope"}
+          </h2>
           <div className="pp-grid">
             {p.scope.map(g => (
               <div key={g.group} className="pp-box">
@@ -170,7 +214,9 @@ export default function ProjectPage({id}) {
 
       {p.highlights ? (
         <section className="pp-section">
-          <h2 className="pp-h2">{isVi ? "Điểm nổi bật" : "Highlights"}</h2>
+          <h2 className="pp-h2">
+            {isVi ? "Kết quả và điểm nổi bật" : "Results and highlights"}
+          </h2>
           <ul className="pp-list">
             {p.highlights.map(h => (
               <li key={h.title}>

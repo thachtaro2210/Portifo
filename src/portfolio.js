@@ -216,9 +216,11 @@ const bigProjects = {
       image: require("./assets/images/era.png"),
       badge: "",
       badge_vi: "",
-      summary: "Real estate rental & sales platform with blockchain escrow deposits, 360° VR tours, real-time chat and OCR identity verification.",
-      summary_vi: "Nền tảng thuê và mua bán bất động sản với bảo chứng đặt cọc blockchain, xem nhà 360° VR, chat thời gian thực và xác thực CCCD bằng OCR.",
-      tech: ["React","Spring Boot","PostgreSQL","Solidity","WebSocket"],
+      summary:
+        "Real estate rental & sales platform with blockchain escrow deposits, 360° VR tours, real-time chat and OCR identity verification.",
+      summary_vi:
+        "Nền tảng thuê và mua bán bất động sản với bảo chứng đặt cọc blockchain, xem nhà 360° VR, chat thời gian thực và xác thực CCCD bằng OCR.",
+      tech: ["React", "Spring Boot", "PostgreSQL", "Solidity", "WebSocket"],
       id: "apartment",
       projectName: "Apartment & Real Estate Platform",
       projectName_vi: "Hệ thống Quản lý & Giao dịch Bất động sản (Apartment)",
@@ -248,9 +250,11 @@ const bigProjects = {
       image: require("./assets/images/shoppc_logo.png"),
       badge: "",
       badge_vi: "",
-      summary: "PC components e-commerce with a build compatibility checker, Gemini-powered AI assistant and semantic vector search.",
-      summary_vi: "Thương mại điện tử linh kiện PC với bộ kiểm tra tương thích, trợ lý AI Gemini và tìm kiếm ngữ nghĩa bằng vector.",
-      tech: ["React","Spring Boot","MongoDB","Node.js","FAISS"],
+      summary:
+        "PC components e-commerce with a build compatibility checker, Gemini-powered AI assistant and semantic vector search.",
+      summary_vi:
+        "Thương mại điện tử linh kiện PC với bộ kiểm tra tương thích, trợ lý AI Gemini và tìm kiếm ngữ nghĩa bằng vector.",
+      tech: ["React", "Spring Boot", "MongoDB", "Node.js", "FAISS"],
       id: "shoppc",
       projectName: "ShopPC - AI-Powered Custom PC E-Commerce Platform",
       projectName_vi:
@@ -281,9 +285,11 @@ const bigProjects = {
       image: require("./assets/images/zala_logo.png"),
       badge: "",
       badge_vi: "",
-      summary: "Multi-platform real-time messaging app with JWT auth, WebSocket chat and video calls. Led the team.",
-      summary_vi: "Ứng dụng nhắn tin đa nền tảng thời gian thực với JWT, chat WebSocket và gọi video. Làm trưởng nhóm.",
-      tech: ["React Native","Node.js","Socket.IO","MongoDB","Kafka"],
+      summary:
+        "Multi-platform real-time messaging app with JWT auth, WebSocket chat and video calls. Led the team.",
+      summary_vi:
+        "Ứng dụng nhắn tin đa nền tảng thời gian thực với JWT, chat WebSocket và gọi video. Làm trưởng nhóm.",
+      tech: ["React Native", "Node.js", "Socket.IO", "MongoDB", "Kafka"],
       id: "zala",
       projectName: "Zala - Multi-Platform Messaging System",
       projectName_vi: "Zala - Hệ thống Tin nhắn Đa nền tảng",
@@ -313,9 +319,11 @@ const bigProjects = {
       image: require("./assets/images/iuhLogo.png"),
       badge: "",
       badge_vi: "",
-      summary: "Student attendance with offline face recognition, anti-spoofing liveness detection and rotating QR/OTP. Promising Award at faculty research conference.",
-      summary_vi: "Điểm danh sinh viên bằng nhận diện khuôn mặt, chống giả mạo, QR/OTP động. Đạt giải Triển vọng NCKH cấp Khoa.",
-      tech: ["React Native","Spring Boot","FastAPI","ONNX","MongoDB"],
+      summary:
+        "Student attendance with offline face recognition, anti-spoofing liveness detection and rotating QR/OTP. Promising Award at faculty research conference.",
+      summary_vi:
+        "Điểm danh sinh viên bằng nhận diện khuôn mặt, chống giả mạo, QR/OTP động. Đạt giải Triển vọng NCKH cấp Khoa.",
+      tech: ["React Native", "Spring Boot", "FastAPI", "ONNX", "MongoDB"],
       id: "attendance",
       projectName: "Smart Attendance & Anti-Spoofing Face Recognition System",
       projectName_vi:
@@ -351,9 +359,11 @@ const bigProjects = {
       image: require("./assets/images/flower_ecom_logo.png"),
       badge: "",
       badge_vi: "",
-      summary: "Online flower shop with gift notes, coupons, VNPay payment and live order tracking.",
-      summary_vi: "Cửa hàng hoa trực tuyến với thiệp chúc, mã giảm giá, thanh toán VNPay và theo dõi đơn hàng.",
-      tech: ["React","Node.js","Express","MongoDB","VNPay"],
+      summary:
+        "Online flower shop with gift notes, coupons, VNPay payment and live order tracking.",
+      summary_vi:
+        "Cửa hàng hoa trực tuyến với thiệp chúc, mã giảm giá, thanh toán VNPay và theo dõi đơn hàng.",
+      tech: ["React", "Node.js", "Express", "MongoDB", "VNPay"],
       id: "flower",
       projectName: "Flower E-Commerce System",
       projectName_vi: "Hệ thống Cửa hàng Hoa trực tuyến (Flower E-Commerce)",
@@ -391,7 +401,8 @@ const companyProject = {
   status: "Staging environment",
   status_vi: "Môi trường staging",
   name: "GEMS - Multi-Plant EHS Management System",
-  name_vi: "GEMS - Hệ thống Quản lý An toàn, Sức khỏe & Môi trường (EHS) đa nhà máy",
+  name_vi:
+    "GEMS - Hệ thống Quản lý An toàn, Sức khỏe & Môi trường (EHS) đa nhà máy",
   role: "Full-Stack Developer",
   role_vi: "Lập trình viên Full-Stack",
   summary:
@@ -401,7 +412,11 @@ const companyProject = {
   stats: [
     {value: "17", label: "Modules", label_vi: "Phân hệ"},
     {value: "8", label: "Roles", label_vi: "Vai trò"},
-    {value: "Multi", label: "Plants, 1 account", label_vi: "Nhà máy, 1 tài khoản"}
+    {
+      value: "Multi",
+      label: "Plants, 1 account",
+      label_vi: "Nhà máy, 1 tài khoản"
+    }
   ],
   tech: [
     "React 18",
@@ -447,6 +462,214 @@ const companyProject = {
       name: "EHS staff walkthrough",
       name_vi: "Luồng nhân viên EHS",
       url: "https://pub-0e820f9648c44b9287ba41be64a35ed6.r2.dev/demo_testhien_nhan-vien-ehs.webm"
+    }
+  ],
+  story: [
+    {
+      title: "Context",
+      title_vi: "Bối cảnh",
+      intro:
+        "A manufacturing group with 5 plants ran its EHS operations on Google Sheets and Apps Script: about 75 tables in one workbook, 11 modules, and paper logs on the side. The customer wanted to move to a real system without losing the data model they already knew.",
+      intro_vi:
+        "Một tập đoàn sản xuất có 5 nhà máy vận hành EHS trên Google Sheets và Apps Script: khoảng 75 bảng trong một file, 11 phân hệ, kèm sổ giấy. Khách muốn chuyển sang hệ thống thật mà không bỏ mô hình dữ liệu họ đã quen."
+    },
+    {
+      title: "Problems to solve",
+      title_vi: "Vấn đề đặt ra",
+      items: [
+        {
+          title: "Scattered data",
+          title_vi: "Dữ liệu rời rạc",
+          desc: "Each plant kept its own sheets, so there was no single view of safety, health and environment across the group.",
+          desc_vi:
+            "Mỗi nhà máy giữ file riêng nên không có cái nhìn chung về an toàn, sức khỏe, môi trường toàn tập đoàn."
+        },
+        {
+          title: "No real accounts or permissions",
+          title_vi: "Chưa có tài khoản và phân quyền thật",
+          desc: "Accounts issued by an admin, each with a role and a list of plants they may access.",
+          desc_vi:
+            "Cần tài khoản do admin cấp, mỗi tài khoản có vai trò và danh sách nhà máy được truy cập."
+        },
+        {
+          title: "Use on phones",
+          title_vi: "Dùng trên điện thoại",
+          desc: "Inspectors and EHS staff work on the floor, not at a desk.",
+          desc_vi:
+            "Người kiểm tra và nhân viên EHS làm việc tại hiện trường, không ngồi bàn."
+        },
+        {
+          title: "Large manual data entry",
+          title_vi: "Nhập liệu thủ công quá lớn",
+          desc: "Health-check records run to thousands of rows. Excel import and export were required.",
+          desc_vi:
+            "Hồ sơ khám sức khỏe lên tới hàng nghìn dòng. Bắt buộc có nhập và xuất Excel."
+        },
+        {
+          title: "Modules did not talk to each other",
+          title_vi: "Các phân hệ không liên thông",
+          desc: "A failed inspection, an expiring permit or a medicine dispensed should trigger work elsewhere, but people did it by hand.",
+          desc_vi:
+            "Kiểm tra không đạt, giấy phép sắp hết hạn hay cấp thuốc đều phải kéo theo việc ở phân hệ khác, nhưng đang làm tay."
+        },
+        {
+          title: "Ownership",
+          title_vi: "Quyền sở hữu",
+          desc: "Data and source code belong to the customer. Later upgrades are handled separately.",
+          desc_vi:
+            "Dữ liệu và mã nguồn thuộc về khách. Nâng cấp sau này tính riêng."
+        }
+      ]
+    },
+    {
+      title: "Analysis",
+      title_vi: "Phân tích",
+      items: [
+        {
+          title: "Business logic was already separate from the UI",
+          title_vi: "Nghiệp vụ đã tách khỏi giao diện",
+          desc: "Every write went through one service function, every side effect through an event bus, every deadline alert through one scheduled sweep. That made it possible to move all three layers to a server without rewriting the rules.",
+          desc_vi:
+            "Mọi thao tác ghi đi qua một hàm service, mọi hiệu ứng dây chuyền qua event bus, mọi cảnh báo hạn qua một lượt quét định kỳ. Nhờ vậy dời cả ba lớp lên server mà không phải viết lại nghiệp vụ."
+        },
+        {
+          title: "Permission = Role × Module × Action × Plant",
+          title_vi: "Quyền = Vai trò × Phân hệ × Hành động × Nhà máy",
+          desc: "Permissions attach to roles, never to individuals. Both the frontend and the API check them, because hiding a button is not security.",
+          desc_vi:
+            "Quyền gán cho vai trò, không gán cho từng người. Cả frontend và API đều kiểm tra, vì ẩn nút không phải là bảo mật."
+        },
+        {
+          title: "Keep the customer's data model",
+          title_vi: "Giữ mô hình dữ liệu của khách",
+          desc: "Same PascalCase fields and string IDs as the original sheets, so existing data and reports map one to one.",
+          desc_vi:
+            "Giữ tên trường PascalCase và ID dạng chuỗi như file gốc, để dữ liệu và báo cáo cũ ánh xạ một-một."
+        }
+      ]
+    },
+    {
+      title: "What I built",
+      title_vi: "Cách đã làm",
+      intro:
+        "The core is a trigger engine: modules react to each other's events instead of relying on people to remember. Four main chains were built in depth.",
+      intro_vi:
+        "Trọng tâm là trigger engine: các phân hệ tự phản ứng theo sự kiện của nhau thay vì trông chờ con người nhớ. Bốn chuỗi chính được làm sâu.",
+      flows: [
+        {
+          title: "Planning",
+          title_vi: "Kế hoạch",
+          steps: [
+            "EHS plan",
+            "Tasks generated by frequency",
+            "KPI",
+            "Dashboard"
+          ],
+          steps_vi: [
+            "Kế hoạch EHS",
+            "Tự sinh công việc theo tần suất",
+            "KPI",
+            "Dashboard"
+          ]
+        },
+        {
+          title: "Inspection",
+          title_vi: "Kiểm tra an toàn",
+          steps: ["Item fails", "Finding", "Corrective action", "Notification"],
+          steps_vi: [
+            "Hạng mục không đạt",
+            "Phát hiện",
+            "Hành động khắc phục",
+            "Thông báo"
+          ]
+        },
+        {
+          title: "Clinic",
+          title_vi: "Y tế",
+          steps: [
+            "Medicine dispensed",
+            "Stock deducted",
+            "Low-stock and expiry alert"
+          ],
+          steps_vi: ["Cấp thuốc", "Trừ kho", "Cảnh báo tồn thấp và hết hạn"]
+        },
+        {
+          title: "Equipment",
+          title_vi: "Thiết bị",
+          steps: [
+            "Inspection done",
+            "Next due date updated",
+            "Alert before expiry"
+          ],
+          steps_vi: [
+            "Kiểm định xong",
+            "Cập nhật hạn kế tiếp",
+            "Cảnh báo trước hạn"
+          ]
+        }
+      ]
+    },
+    {
+      title: "How it evolved",
+      title_vi: "Quá trình phát triển",
+      numbered: true,
+      items: [
+        {
+          title: "Offline-first PWA proof of concept",
+          title_vi: "PoC dạng PWA offline-first",
+          desc: "React, TypeScript, Dexie (IndexedDB), installable on a phone. Rebuilt the 11 original modules plus the trigger engine so the customer could test quickly.",
+          desc_vi:
+            "React, TypeScript, Dexie (IndexedDB), cài được lên điện thoại. Dựng lại 11 phân hệ gốc cùng trigger engine để khách test nhanh."
+        },
+        {
+          title: "Five rounds of customer feedback",
+          title_vi: "Năm vòng phản hồi của khách",
+          desc: "Each round came as slides with red-circled screenshots. I traced every comment to a task, fixed real bugs first, and added modules such as chemicals, water and wastewater, and incident reports with 5-Why analysis. The permission matrix grew from fixed roles to custom roles.",
+          desc_vi:
+            "Mỗi vòng khách gửi slide kèm ảnh khoanh đỏ. Mình truy từng góp ý về task, sửa lỗi thật trước, rồi thêm phân hệ như hóa chất, nước và nước thải, báo cáo sự cố với phân tích 5-Why. Ma trận phân quyền đi từ vai trò cố định tới vai trò tùy biến."
+        },
+        {
+          title: "Laravel backend and API migration",
+          title_vi: "Backend Laravel và chuyển sang API",
+          desc: "Moved the rules to a Laravel API on MariaDB with Sanctum tokens, then switched the frontend from Dexie to REST. Now many people across plants share one dataset.",
+          desc_vi:
+            "Dời nghiệp vụ lên API Laravel trên MariaDB với token Sanctum, rồi đổi frontend từ Dexie sang REST. Giờ nhiều người ở nhiều nhà máy dùng chung một bộ dữ liệu."
+        }
+      ]
+    },
+    {
+      title: "Hard problems and decisions",
+      title_vi: "Bài toán khó và quyết định",
+      items: [
+        {
+          title: "Emissions you can trace to a receipt",
+          title_vi: "Phát thải truy vết được về biên lai",
+          desc: "The customer rejected totals that could not be audited. Annual rows are now either MANUAL (a reason is mandatory) or CALCULATED (read-only, rebuilt incrementally, never touching manual rows), and each calculated row opens its exact sources and attached invoices.",
+          desc_vi:
+            "Khách không chấp nhận tổng số không kiểm chứng được. Giờ mỗi dòng năm là MANUAL (bắt buộc ghi lý do) hoặc CALCULATED (chỉ đọc, cập nhật tăng dần, không đụng dòng nhập tay), và bấm vào dòng tính toán sẽ thấy đúng nguồn kèm hóa đơn đính kèm."
+        },
+        {
+          title: "Previews on the client, truth on the server",
+          title_vi: "Xem trước ở client, kết quả đúng ở server",
+          desc: "Calculations like GHG, lot status and legal checks still run in the form for instant preview, but the server always recomputes on save, so the two can never disagree.",
+          desc_vi:
+            "Các phép tính như GHG, trạng thái lô, kiểm tra pháp lý vẫn chạy ở form để xem trước tức thì, nhưng server luôn tính lại khi lưu nên hai bên không thể lệch nhau."
+        },
+        {
+          title: "Plant scope enforced in the API",
+          title_vi: "Phạm vi nhà máy do API quyết định",
+          desc: "Filtering by plant lives in the backend. The UI only reflects it, so a user cannot see another plant by editing a request.",
+          desc_vi:
+            "Việc lọc theo nhà máy nằm ở backend. Giao diện chỉ phản ánh lại, nên không ai xem được nhà máy khác bằng cách sửa request."
+        },
+        {
+          title: "Trade-off: online only",
+          title_vi: "Đánh đổi: chỉ chạy khi có mạng",
+          desc: "Dropping offline-first meant notifications poll every 30 seconds and data screens need the API. In exchange there is one shared dataset, real accounts and server-side jobs.",
+          desc_vi:
+            "Bỏ offline-first nghĩa là thông báo cập nhật mỗi 30 giây và màn hình dữ liệu cần API. Đổi lại có một bộ dữ liệu chung, tài khoản thật và tác vụ chạy trên server."
+        }
+      ]
     }
   ],
   scope: [
