@@ -75,6 +75,13 @@
   // Logos are raster and anti-aliased against white; keep a light plate in dark mode.
   &.is-logo {
     background: #fffdf9;
+    img:not(.is-cover) {
+      width: auto;
+      max-width: 100%;
+      height: 261px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
   }
   img {
     display: block;
