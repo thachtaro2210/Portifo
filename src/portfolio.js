@@ -213,6 +213,39 @@ const bigProjects = {
     "MỘT SỐ DỰ ÁN CÁ NHÂN VÀ DỰ ÁN NHÓM MÀ MÌNH ĐÃ THAM GIA PHÁT TRIỂN",
   projects: [
     {
+      image:
+        "https://pub-0e820f9648c44b9287ba41be64a35ed6.r2.dev/round-2/01_command-center.png",
+      projectName: "GEMS - Multi-Plant EHS Management System",
+      projectName_vi:
+        "GEMS - Hệ thống Quản lý An toàn, Sức khỏe & Môi trường (EHS) đa nhà máy",
+      projectDesc:
+        "Role: Full-Stack Developer (19T Digital)\n\nDescription: A multi-plant web application that brings all EHS (Environment, Health & Safety) operations of a manufacturing group into one place, replacing scattered Excel files and paper logs. Running on a real deployed environment with role-based and plant-based access control.\n\nTech Stack:\n- Frontend: React 18, TypeScript, Vite, Tailwind CSS, React Router, TanStack Query, Recharts, Zod, ExcelJS.\n- Backend: Laravel 13 (PHP 8.3), REST API, Laravel Sanctum authentication, MariaDB.\n\nScope (17 modules):\n- Overview: Command Center, EHS plan, task board.\n- Safety: inspections, accidents & incidents, strict-control equipment, fire safety (PCCC), contractors, external audits.\n- Environment & Health: occupational health, working-environment monitoring, waste, chemicals, water & wastewater, energy & GHG emissions.\n- Organization: EHS training (with online exams), personnel.\n\nKey Features:\n- 8-Role Access Control: System admin, EHS Manager, EHS Leader, EHS staff, medical staff, auditor, view-only and contractor. Menus and data change by role and plant scope.\n- Multi-Plant Management: Manage many plants in a single account and switch scope directly in the UI.\n- Expiry Alerts: Warnings for equipment inspections, permits and contractor competency records.\n- Reports & Printing: Excel and PDF export, print-ready pages for inspection reports and wastewater logs.\n- Frontend Migration: Moved the frontend from local storage to a REST API backend.\n- Multi-language & PWA: Vietnamese UI with multi-language support, installable as a PWA.\n- Iterative Delivery: Built features over multiple rounds of customer feedback.",
+      projectDesc_vi:
+        "Vai trò: Lập trình viên Full-Stack (19T Digital)\n\nMô tả dự án: Ứng dụng web nhiều nhà máy, gom toàn bộ nghiệp vụ EHS (An toàn, Sức khỏe, Môi trường) của một tập đoàn sản xuất vào một nơi, thay cho Excel và sổ giấy rời rạc. Dự án chạy thật trên môi trường deploy, có phân quyền theo vai trò và theo từng nhà máy.\n\nCông nghệ sử dụng (Tech Stack):\n- Frontend: React 18, TypeScript, Vite, Tailwind CSS, React Router, TanStack Query, Recharts, Zod, ExcelJS.\n- Backend: Laravel 13 (PHP 8.3), REST API, xác thực Laravel Sanctum, cơ sở dữ liệu MariaDB.\n\nPhạm vi (17 phân hệ):\n- Tổng quan: Command Center, kế hoạch EHS, bảng công việc.\n- An toàn: kiểm tra, tai nạn và sự cố, thiết bị nghiêm ngặt, PCCC, nhà thầu, đánh giá bên ngoài.\n- Môi trường & Sức khỏe: y tế, quan trắc môi trường lao động, chất thải, hoá chất, nước và nước thải, năng lượng và khí nhà kính (GHG).\n- Tổ chức: đào tạo EHS (có thi trực tuyến), nhân sự.\n\nCác tính năng nổi bật (Key Features):\n- Phân quyền 8 vai trò: Quản trị hệ thống, EHS Manager, EHS Leader, nhân viên EHS, nhân viên y tế, auditor, chỉ xem, nhà thầu. Menu và dữ liệu thay đổi theo vai trò và phạm vi nhà máy.\n- Quản lý nhiều nhà máy: Một tài khoản quản lý nhiều nhà máy, chuyển phạm vi ngay trên giao diện.\n- Cảnh báo hạn: Cảnh báo cho thiết bị kiểm định, giấy phép và hồ sơ năng lực của nhà thầu.\n- Báo cáo & In ấn: Xuất Excel và PDF, trang in cho báo cáo kiểm tra và nhật ký nước thải.\n- Chuyển đổi kiến trúc: Chuyển frontend từ lưu trữ cục bộ sang REST API.\n- Đa ngôn ngữ & PWA: Giao diện tiếng Việt, hỗ trợ đa ngôn ngữ, cài được như ứng dụng PWA.\n- Phát triển theo vòng phản hồi: Xây dựng tính năng theo phản hồi của khách qua nhiều vòng.",
+      footerLink: [
+        {
+          name: "Demo Video",
+          name_vi: "Video Demo",
+          url: "https://pub-0e820f9648c44b9287ba41be64a35ed6.r2.dev/demo_tour_all_pages.webm"
+        },
+        {
+          name: "Command Center",
+          name_vi: "Màn hình Command Center",
+          url: "https://pub-0e820f9648c44b9287ba41be64a35ed6.r2.dev/round-2/01_command-center.png"
+        },
+        {
+          name: "EHS Plan",
+          name_vi: "Kế hoạch EHS",
+          url: "https://pub-0e820f9648c44b9287ba41be64a35ed6.r2.dev/round-2/02_ke-hoach-ehs.png"
+        },
+        {
+          name: "Inspections",
+          name_vi: "Kiểm tra",
+          url: "https://pub-0e820f9648c44b9287ba41be64a35ed6.r2.dev/round-2/04_kiem-tra.png"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/era.png"),
       projectName: "Apartment & Real Estate Platform",
       projectName_vi: "Hệ thống Quản lý & Giao dịch Bất động sản (Apartment)",

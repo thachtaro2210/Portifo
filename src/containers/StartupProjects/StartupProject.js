@@ -72,6 +72,12 @@ const renderFormattedDesc = descText => {
 
 export default function StartupProject() {
   const [activeProject, setActiveProject] = useState(null);
+  const [showFull, setShowFull] = useState(false);
+
+  function openProject(project) {
+    setShowFull(false);
+    setActiveProject(project);
+  }
 
   function openUrlInNewTab(url) {
     if (!url) {
@@ -128,6 +134,12 @@ export default function StartupProject() {
                 return (
                   <div
                     key={i}
+                    role="button"
+                    tabIndex={0}
+                    onClick={() => openProject(project)}
+                    onKeyDown={e => {
+                      if (e.key === "Enter") openProject(project);
+                    }}
                     className={
                       isDark
                         ? "dark-mode project-card project-card-dark"
@@ -158,35 +170,9 @@ export default function StartupProject() {
                       >
                         {displayDesc}
                       </p>
-                      <button
-                        type="button"
-                        className="view-details-btn"
-                        onClick={e => {
-                          e.preventDefault();
-                          setActiveProject(project);
-                        }}
-                      >
-                        {isVi ? "Xem chi tiết" : "View Details"}
-                      </button>
-                      {project.footerLink ? (
-                        <div className="project-card-footer">
-                          {project.footerLink.map((link, i) => {
-                            return (
-                              <span
-                                key={i}
-                                className={
-                                  isDark
-                                    ? "dark-mode project-tag"
-                                    : "project-tag"
-                                }
-                                onClick={() => openUrlInNewTab(link.url)}
-                              >
-                                {t(link, "name")}
-                              </span>
-                            );
-                          })}
-                        </div>
-                      ) : null}
+                      <span className="project-more">
+                        {isVi ? "Xem dự án →" : "View project →"}
+                      </span>
                     </div>
                   </div>
                 );
@@ -221,8 +207,28 @@ export default function StartupProject() {
             )}
             <h2 className="modal-title">{t(activeProject, "projectName")}</h2>
             <div className="modal-description">
-              {renderFormattedDesc(t(activeProject, "projectDesc"))}
+              {renderFormattedDesc(
+                showFull
+                  ? t(activeProject, "projectDesc")
+                  : t(activeProject, "projectDesc")
+                      .split("\n\n")
+                      .slice(0, 2)
+                      .join("\n\n")
+              )}
             </div>
+            <button
+              type="button"
+              className="view-details-btn"
+              onClick={() => setShowFull(!showFull)}
+            >
+              {showFull
+                ? isVi
+                  ? "Thu gọn"
+                  : "Show less"
+                : isVi
+                ? "Xem chi tiết"
+                : "View Details"}
+            </button>
             {activeProject.footerLink && (
               <div className="modal-footer-links">
                 {activeProject.footerLink.map((link, i) => (
