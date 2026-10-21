@@ -115,6 +115,8 @@ export default function ProjectPage({id}) {
   const videos = unused.filter(g => g.type === "video");
   const byName = name => gallery.find(g => g.name === name);
   const desc = t(p, "projectDesc");
+  const ids = [companyProject.id, ...bigProjects.projects.map(x => x.id)];
+  const next = findProject(ids[(ids.indexOf(id) + 1) % ids.length]);
 
   return (
     <div className="pp">
@@ -130,6 +132,16 @@ export default function ProjectPage({id}) {
         <h1 className="pp-title">{t(p, "projectName")}</h1>
         {p.role ? <p className="pp-role">{t(p, "role")}</p> : null}
         <p className="pp-summary">{t(p, "summary")}</p>
+        {p.stats ? (
+          <div className="pp-stats">
+            {p.stats.map(x => (
+              <div key={x.label} className="pp-stat">
+                <strong>{x.value}</strong>
+                <span>{t(x, "label")}</span>
+              </div>
+            ))}
+          </div>
+        ) : null}
         <div className="pp-chips">
           {(p.tech || []).map(n => (
             <span key={n} className="pp-chip">
@@ -177,17 +189,21 @@ export default function ProjectPage({id}) {
           ) : null}
           {s.flows ? (
             <div className="pp-flows">
-              {s.flows.map(f => (
+              {s.flows.map((f, fi) => (
                 <div key={f.title} className="pp-flow">
-                  <span className="pp-flow-name">{t(f, "title")}</span>
-                  <div className="pp-flow-steps">
-                    {t(f, "steps").map((st, i) => (
-                      <React.Fragment key={st}>
-                        {i > 0 ? <span className="pp-arrow">→</span> : null}
-                        <span className="pp-step">{st}</span>
-                      </React.Fragment>
+                  <span className="pp-flow-count">
+                    {String(fi + 1).padStart(2, "0")} /{" "}
+                    {String(s.flows.length).padStart(2, "0")}
+                  </span>
+                  <h3 className="pp-flow-title">{t(f, "title")}</h3>
+                  <p className="pp-p">{t(f, "desc")}</p>
+                  <ol className="pp-flow-steps">
+                    {t(f, "steps").map(st => (
+                      <li key={st} className="pp-step">
+                        {st}
+                      </li>
                     ))}
-                  </div>
+                  </ol>
                 </div>
               ))}
             </div>
@@ -302,6 +318,13 @@ export default function ProjectPage({id}) {
             ))}
           </div>
         </section>
+      ) : null}
+
+      {next ? (
+        <a className="pp-next" href={`#/project/${next.id}`}>
+          <span>{isVi ? "Dự án tiếp theo" : "Next project"}</span>
+          <strong>{t(next, "projectName")} →</strong>
+        </a>
       ) : null}
     </div>
   );

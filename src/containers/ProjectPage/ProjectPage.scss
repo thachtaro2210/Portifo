@@ -231,38 +231,6 @@
   font-size: 13px;
   font-weight: 700;
 }
-.pp-flows {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.pp-flow-name {
-  display: block;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 0.4rem;
-}
-.pp-flow-steps {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-}
-.pp-step {
-  padding: 0.45rem 0.9rem;
-  border-radius: 8px;
-  border: 1px solid var(--border-strong);
-  background: var(--surface);
-  font-size: 14px;
-  font-weight: 600;
-}
-.pp-arrow {
-  color: var(--primary);
-  font-weight: 700;
-}
 
 .pp-evidence {
   margin-top: 1.5rem;
@@ -285,5 +253,102 @@
   gap: 1.25rem;
   .is-wide {
     grid-column: 1 / -1;
+  }
+}
+
+.pp-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin: 0 0 1.25rem;
+}
+.pp-stat {
+  display: flex;
+  flex-direction: column;
+  strong {
+    font-size: 30px;
+    line-height: 1;
+  }
+  span {
+    margin-top: 4px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+}
+.pp-flows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.pp-flow {
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+.pp-flow-count {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+}
+.pp-flow-title {
+  margin: 0.3rem 0 0.6rem;
+  font-size: 20px;
+  font-weight: 700;
+}
+.pp-flow-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+.pp-step {
+  counter-increment: step;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem 0.4rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface-muted);
+  font-size: 14px;
+  font-weight: 600;
+  &::before {
+    content: counter(step);
+    flex: none;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-size: 12px;
+  }
+}
+.pp-next {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 3.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  color: var(--fg);
+  text-decoration: none;
+  span {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  strong {
+    font-size: 18px;
+  }
+  &:hover {
+    border-color: var(--primary);
   }
 }
