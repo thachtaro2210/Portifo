@@ -93,6 +93,8 @@
   gap: 0.75rem;
 }
 .company-btn {
+  text-decoration: none;
+  display: inline-block;
   font-size: 15px;
   font-weight: 600;
   padding: 0.65rem 1.3rem;
@@ -164,173 +166,6 @@
   border-radius: 999px;
 }
 
-/* modal */
-.cp-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2000;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(8px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: cpFade 0.25s ease-out;
-}
-.cp-modal {
-  position: relative;
-  width: min(1280px, 95vw);
-  max-height: 92vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  background: var(--surface);
-  color: var(--fg);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  animation: cpUp 0.3s ease-out;
-}
-.cp-close {
-  position: absolute;
-  top: 10px;
-  right: 14px;
-  z-index: 2;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: none;
-  font-size: 24px;
-  line-height: 1;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.55);
-  cursor: pointer;
-}
-.cp-stage {
-  flex: none;
-  background: #000;
-  display: flex;
-  justify-content: center;
-}
-.cp-media {
-  display: block;
-  width: 100%;
-  max-height: 62vh;
-  object-fit: contain;
-}
-.cp-thumbs {
-  flex: none;
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding: 12px 1.5rem;
-  border-bottom: 1px solid var(--border);
-}
-.cp-thumb {
-  flex: none;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 6px 12px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: transparent;
-  color: var(--muted);
-  cursor: pointer;
-  &.active {
-    color: #fff;
-    background: var(--primary);
-    border-color: var(--primary);
-  }
-}
-.cp-body {
-  flex: 1;
-  min-height: 0;
-  overflow-y: auto;
-  padding: 1.75rem 2.5rem 2.5rem;
-  scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  &::-webkit-scrollbar-thumb {
-    background: var(--border);
-    border-radius: 999px;
-  }
-  &::-webkit-scrollbar-thumb:hover {
-    background: var(--muted);
-  }
-}
-.cp-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin: 0 0 0.3rem;
-}
-.cp-text {
-  color: var(--muted);
-  line-height: 1.65;
-  margin: 0;
-}
-.cp-h {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--primary);
-  margin: 1.75rem 0 0.8rem;
-}
-.cp-scope {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 1rem;
-}
-.cp-scope-group {
-  background: var(--surface-muted);
-  border-radius: 12px;
-  padding: 1rem 1.1rem;
-  strong {
-    font-size: 14px;
-  }
-  ul {
-    margin: 0.5rem 0 0;
-    padding-left: 1.1rem;
-    font-size: 14px;
-    color: var(--muted);
-    line-height: 1.7;
-  }
-}
-.cp-highlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem 1.5rem;
-}
-.cp-highlight {
-  strong {
-    font-size: 15px;
-  }
-  p {
-    margin: 0.25rem 0 0;
-    font-size: 14px;
-    line-height: 1.6;
-    color: var(--muted);
-  }
-}
-
-@keyframes cpFade {
-  from {
-    opacity: 0;
-  }
-}
-@keyframes cpUp {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-}
-
 @media (max-width: 900px) {
   .company-card {
     grid-template-columns: 1fr;
@@ -338,8 +173,5 @@
   }
   .company-name {
     font-size: 24px;
-  }
-  .cp-body {
-    padding: 1.25rem;
   }
 }

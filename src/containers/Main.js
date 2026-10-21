@@ -7,6 +7,7 @@ import WorkExperience from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
 import CompanyProject from "./CompanyProject/CompanyProject";
 import StartupProject from "./StartupProjects/StartupProject";
+import ProjectPage from "./ProjectPage/ProjectPage";
 import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
@@ -50,6 +51,22 @@ const Main = () => {
     }
   }, [isDark]);
 
+  const [hash, setHash] = useState(window.location.hash);
+  useEffect(() => {
+    const onHash = () => setHash(window.location.hash);
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
+  const projectMatch = hash.match(/^#\/project\/([\w-]+)/);
+  const projectId = projectMatch ? projectMatch[1] : null;
+
+  // Leaving a project page: home sections remount, so scroll to the anchor.
+  useEffect(() => {
+    if (projectId || isShowingSplashAnimation || !hash) return;
+    const el = document.getElementById(hash.slice(1));
+    if (el) el.scrollIntoView();
+  }, [projectId, hash, isShowingSplashAnimation]);
+
   const changeTheme = () => {
     setIsDark(!isDark);
   };
@@ -80,6 +97,12 @@ const Main = () => {
       >
         {isShowingSplashAnimation && splashScreen.enabled ? (
           <SplashScreen />
+        ) : projectId ? (
+          <>
+            <Header />
+            <ProjectPage id={projectId} />
+            <Footer />
+          </>
         ) : (
           <>
             <Header />
