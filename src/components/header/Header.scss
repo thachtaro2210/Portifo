@@ -207,3 +207,8 @@
 .headroom:not(.headroom--unfixed) .dark-menu.header {
   background-color: rgba(20, 20, 28, 0.85) !important;
 }
+
+/* keep header visible while scrolling down */
+.headroom--unpinned {
+  transform: translateY(0) !important;
+}
