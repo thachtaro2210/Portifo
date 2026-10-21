@@ -43,6 +43,7 @@ export default function BackgroundPatterns({isDark}) {
           }}
         >
           <svg
+            shapeRendering="geometricPrecision"
             className="absolute inset-0 h-full w-full"
             style={{width: "100%", height: "100%"}}
             xmlns="http://www.w3.org/2000/svg"
@@ -65,8 +66,8 @@ export default function BackgroundPatterns({isDark}) {
                   ry="120"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="0.6"
-                  opacity="0.15"
+                  strokeWidth="1"
+                  opacity="0.117"
                 />
                 <ellipse
                   cx="150"
@@ -75,8 +76,8 @@ export default function BackgroundPatterns({isDark}) {
                   ry="90"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="0.5"
-                  opacity="0.12"
+                  strokeWidth="1"
+                  opacity="0.078"
                 />
                 <ellipse
                   cx="150"
@@ -85,8 +86,8 @@ export default function BackgroundPatterns({isDark}) {
                   ry="65"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="0.5"
-                  opacity="0.10"
+                  strokeWidth="1"
+                  opacity="0.065"
                 />
                 <ellipse
                   cx="150"
@@ -95,8 +96,8 @@ export default function BackgroundPatterns({isDark}) {
                   ry="40"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="0.4"
-                  opacity="0.08"
+                  strokeWidth="1"
+                  opacity="0.042"
                 />
                 <ellipse
                   cx="150"
@@ -105,8 +106,8 @@ export default function BackgroundPatterns({isDark}) {
                   ry="18"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="0.3"
-                  opacity="0.06"
+                  strokeWidth="1"
+                  opacity="0.03"
                 />
                 {/* Offset contour group */}
                 <ellipse
@@ -116,8 +117,8 @@ export default function BackgroundPatterns({isDark}) {
                   ry="45"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="0.5"
-                  opacity="0.10"
+                  strokeWidth="1"
+                  opacity="0.065"
                 />
                 <ellipse
                   cx="60"
@@ -126,8 +127,8 @@ export default function BackgroundPatterns({isDark}) {
                   ry="22"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="0.4"
-                  opacity="0.07"
+                  strokeWidth="1"
+                  opacity="0.036"
                 />
                 <ellipse
                   cx="250"
@@ -136,8 +137,8 @@ export default function BackgroundPatterns({isDark}) {
                   ry="40"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="0.5"
-                  opacity="0.10"
+                  strokeWidth="1"
+                  opacity="0.065"
                 />
                 <ellipse
                   cx="250"
@@ -146,23 +147,23 @@ export default function BackgroundPatterns({isDark}) {
                   ry="18"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="0.3"
-                  opacity="0.07"
+                  strokeWidth="1"
+                  opacity="0.03"
                 />
                 {/* Horizontal contour lines */}
                 <path
                   d="M0 75 Q75 55 150 75 T300 75"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="0.4"
-                  opacity="0.08"
+                  strokeWidth="1"
+                  opacity="0.042"
                 />
                 <path
                   d="M0 225 Q75 205 150 225 T300 225"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="0.4"
-                  opacity="0.08"
+                  strokeWidth="1"
+                  opacity="0.042"
                 />
               </pattern>
             </defs>
@@ -216,7 +217,7 @@ export default function BackgroundPatterns({isDark}) {
           style={{
             position: "absolute",
             inset: 0,
-            opacity: 0.03,
+            opacity: 0.05,
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
             pointerEvents: "none"
           }}
