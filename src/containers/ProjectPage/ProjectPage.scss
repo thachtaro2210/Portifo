@@ -72,6 +72,10 @@
   border: 1px solid var(--border);
   border-radius: 14px;
   overflow: hidden;
+  // Logos are raster and anti-aliased against white; keep a light plate in dark mode.
+  &.is-logo {
+    background: #fffdf9;
+  }
   img {
     display: block;
     width: 100%;

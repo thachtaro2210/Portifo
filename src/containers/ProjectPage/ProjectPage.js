@@ -152,7 +152,9 @@ export default function ProjectPage({id}) {
       </header>
 
       {p.cover ? (
-        <div className="pp-cover">
+        <div
+          className={"pp-cover" + (p.coverFit === "cover" ? "" : " is-logo")}
+        >
           <img
             src={p.cover}
             alt={t(p, "projectName")}
