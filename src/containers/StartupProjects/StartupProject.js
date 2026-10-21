@@ -73,9 +73,11 @@ const renderFormattedDesc = descText => {
 export default function StartupProject() {
   const [activeProject, setActiveProject] = useState(null);
   const [showFull, setShowFull] = useState(false);
+  const [media, setMedia] = useState(null);
 
   function openProject(project) {
     setShowFull(false);
+    setMedia(null);
     setActiveProject(project);
   }
 
@@ -127,10 +129,6 @@ export default function StartupProject() {
 
             <div className="projects-container">
               {bigProjects.projects.map((project, i) => {
-                const desc = t(project, "projectDesc");
-                const parts = desc.split("\n\n");
-                const displayDesc = parts.slice(0, 2).join("\n\n");
-
                 return (
                   <div
                     key={i}
@@ -151,11 +149,20 @@ export default function StartupProject() {
                         <img
                           src={project.image}
                           alt={t(project, "projectName")}
-                          className="card-image"
+                          className={
+                            project.imageFit === "cover"
+                              ? "card-image card-image-cover"
+                              : "card-image"
+                          }
                         ></img>
                       </div>
                     ) : null}
                     <div className="project-detail">
+                      {project.badge ? (
+                        <span className="project-badge">
+                          {t(project, "badge")}
+                        </span>
+                      ) : null}
                       <h5
                         className={
                           isDark ? "dark-mode card-title" : "card-title"
@@ -168,8 +175,15 @@ export default function StartupProject() {
                           isDark ? "dark-mode card-subtitle" : "card-subtitle"
                         }
                       >
-                        {displayDesc}
+                        {t(project, "summary")}
                       </p>
+                      <div className="tech-chips">
+                        {(project.tech || []).map(name => (
+                          <span key={name} className="tech-chip">
+                            {name}
+                          </span>
+                        ))}
+                      </div>
                       <span className="project-more">
                         {isVi ? "Xem dự án →" : "View project →"}
                       </span>
@@ -196,24 +210,64 @@ export default function StartupProject() {
             >
               &times;
             </button>
-            {activeProject.image && (
+            {media && (
+              <div className="modal-media">
+                {media.type === "video" ? (
+                  <video
+                    key={media.url}
+                    src={media.url}
+                    controls
+                    autoPlay
+                    className="modal-media-el"
+                  />
+                ) : (
+                  <img
+                    src={media.url}
+                    alt={t(media, "name")}
+                    className="modal-media-el"
+                  />
+                )}
+                <button
+                  type="button"
+                  className="modal-media-close"
+                  onClick={() => setMedia(null)}
+                >
+                  {isVi ? "Đóng " : "Close "}
+                  {t(media, "name")} ×
+                </button>
+              </div>
+            )}
+            {!media && activeProject.image && (
               <div className="modal-image-container">
                 <img
                   src={activeProject.image}
                   alt={t(activeProject, "projectName")}
-                  className="modal-image"
+                  className={
+                    activeProject.imageFit === "cover"
+                      ? "modal-image modal-image-cover"
+                      : "modal-image"
+                  }
                 />
               </div>
             )}
+            {activeProject.badge ? (
+              <span className="project-badge">{t(activeProject, "badge")}</span>
+            ) : null}
             <h2 className="modal-title">{t(activeProject, "projectName")}</h2>
+            <div className="tech-chips">
+              {(activeProject.tech || []).map(name => (
+                <span key={name} className="tech-chip">
+                  {name}
+                </span>
+              ))}
+            </div>
             <div className="modal-description">
-              {renderFormattedDesc(
-                showFull
-                  ? t(activeProject, "projectDesc")
-                  : t(activeProject, "projectDesc")
-                      .split("\n\n")
-                      .slice(0, 2)
-                      .join("\n\n")
+              {showFull ? (
+                renderFormattedDesc(t(activeProject, "projectDesc"))
+              ) : (
+                <p className="modal-desc-para">
+                  {t(activeProject, "summary")}
+                </p>
               )}
             </div>
             <button
@@ -235,8 +289,15 @@ export default function StartupProject() {
                   <button
                     key={i}
                     className="modal-link-btn"
-                    onClick={() => openUrlInNewTab(link.url)}
+                    onClick={() =>
+                      link.type ? setMedia(link) : openUrlInNewTab(link.url)
+                    }
                   >
+                    {link.type === "video"
+                      ? "▶ "
+                      : link.type === "image"
+                      ? "🖼 "
+                      : ""}
                     {t(link, "name")}
                   </button>
                 ))}

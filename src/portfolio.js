@@ -215,6 +215,12 @@ const bigProjects = {
     {
       image:
         "https://pub-0e820f9648c44b9287ba41be64a35ed6.r2.dev/round-2/01_command-center.png",
+      badge: "Company project · 19T Digital",
+      badge_vi: "Dự án công ty · 19T Digital",
+      summary: "Multi-plant EHS (Environment, Health & Safety) system with 17 modules and 8 roles, replacing Excel and paper logs. Currently on staging.",
+      summary_vi: "Hệ thống quản lý EHS (An toàn, Sức khỏe, Môi trường) đa nhà máy, 17 phân hệ, 8 vai trò, thay cho Excel và sổ giấy. Đang ở môi trường staging.",
+      tech: ["React","TypeScript","Tailwind CSS","TanStack Query","Laravel","MariaDB"],
+      imageFit: "cover",
       projectName: "GEMS - Multi-Plant EHS Management System",
       projectName_vi:
         "GEMS - Hệ thống Quản lý An toàn, Sức khỏe & Môi trường (EHS) đa nhà máy",
@@ -225,26 +231,31 @@ const bigProjects = {
       footerLink: [
         {
           name: "Demo Video (All Pages)",
+          type: "video",
           name_vi: "Video Demo (Toàn bộ trang)",
           url: "https://pub-0e820f9648c44b9287ba41be64a35ed6.r2.dev/demo_tour_all_pages.webm"
         },
         {
           name: "Demo Video (EHS Staff)",
+          type: "video",
           name_vi: "Video Demo (Nhân viên EHS)",
           url: "https://pub-0e820f9648c44b9287ba41be64a35ed6.r2.dev/demo_testhien_nhan-vien-ehs.webm"
         },
         {
           name: "Command Center",
+          type: "image",
           name_vi: "Màn hình Command Center",
           url: "https://pub-0e820f9648c44b9287ba41be64a35ed6.r2.dev/round-2/01_command-center.png"
         },
         {
           name: "EHS Plan",
+          type: "image",
           name_vi: "Kế hoạch EHS",
           url: "https://pub-0e820f9648c44b9287ba41be64a35ed6.r2.dev/round-2/02_ke-hoach-ehs.png"
         },
         {
           name: "Inspections",
+          type: "image",
           name_vi: "Kiểm tra",
           url: "https://pub-0e820f9648c44b9287ba41be64a35ed6.r2.dev/round-2/04_kiem-tra.png"
         }
@@ -252,6 +263,11 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/era.png"),
+      badge: "",
+      badge_vi: "",
+      summary: "Real estate rental & sales platform with blockchain escrow deposits, 360° VR tours, real-time chat and OCR identity verification.",
+      summary_vi: "Nền tảng thuê và mua bán bất động sản với bảo chứng đặt cọc blockchain, xem nhà 360° VR, chat thời gian thực và xác thực CCCD bằng OCR.",
+      tech: ["React","Spring Boot","PostgreSQL","Solidity","WebSocket"],
       projectName: "Apartment & Real Estate Platform",
       projectName_vi: "Hệ thống Quản lý & Giao dịch Bất động sản (Apartment)",
       projectDesc:
@@ -278,6 +294,11 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/shoppc_logo.png"),
+      badge: "",
+      badge_vi: "",
+      summary: "PC components e-commerce with a build compatibility checker, Gemini-powered AI assistant and semantic vector search.",
+      summary_vi: "Thương mại điện tử linh kiện PC với bộ kiểm tra tương thích, trợ lý AI Gemini và tìm kiếm ngữ nghĩa bằng vector.",
+      tech: ["React","Spring Boot","MongoDB","Node.js","FAISS"],
       projectName: "ShopPC - AI-Powered Custom PC E-Commerce Platform",
       projectName_vi:
         "ShopPC - Hệ thống Thương mại Điện tử & Lắp ráp PC Tích hợp AI",
@@ -305,6 +326,11 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/zala_logo.png"),
+      badge: "",
+      badge_vi: "",
+      summary: "Multi-platform real-time messaging app with JWT auth, WebSocket chat and video calls. Led the team.",
+      summary_vi: "Ứng dụng nhắn tin đa nền tảng thời gian thực với JWT, chat WebSocket và gọi video. Làm trưởng nhóm.",
+      tech: ["React Native","Node.js","Socket.IO","MongoDB","Kafka"],
       projectName: "Zala - Multi-Platform Messaging System",
       projectName_vi: "Zala - Hệ thống Tin nhắn Đa nền tảng",
       projectDesc:
@@ -331,6 +357,11 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/iuhLogo.png"),
+      badge: "",
+      badge_vi: "",
+      summary: "Student attendance with offline face recognition, anti-spoofing liveness detection and rotating QR/OTP. Promising Award at faculty research conference.",
+      summary_vi: "Điểm danh sinh viên bằng nhận diện khuôn mặt, chống giả mạo, QR/OTP động. Đạt giải Triển vọng NCKH cấp Khoa.",
+      tech: ["React Native","Spring Boot","FastAPI","ONNX","MongoDB"],
       projectName: "Smart Attendance & Anti-Spoofing Face Recognition System",
       projectName_vi:
         "Hệ thống Điểm danh Thông minh & Nhận diện Khuôn mặt Chống Giả mạo",
@@ -363,6 +394,11 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/flower_ecom_logo.png"),
+      badge: "",
+      badge_vi: "",
+      summary: "Online flower shop with gift notes, coupons, VNPay payment and live order tracking.",
+      summary_vi: "Cửa hàng hoa trực tuyến với thiệp chúc, mã giảm giá, thanh toán VNPay và theo dõi đơn hàng.",
+      tech: ["React","Node.js","Express","MongoDB","VNPay"],
       projectName: "Flower E-Commerce System",
       projectName_vi: "Hệ thống Cửa hàng Hoa trực tuyến (Flower E-Commerce)",
       projectDesc:

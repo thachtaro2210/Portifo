@@ -3,8 +3,40 @@
 .card-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 1.25rem;
+  box-sizing: border-box;
   transition: transform 0.4s ease;
+}
+.card-image-cover {
+  object-fit: cover;
+  object-position: top left;
+  padding: 0;
+}
+.project-badge {
+  align-self: flex-start;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ec7037;
+  background: rgba(236, 112, 55, 0.12);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin-bottom: 8px;
+}
+.tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.tech-chip {
+  font-size: 12px;
+  padding: 2px 9px;
+  border-radius: 6px;
+  background: rgba(128, 128, 128, 0.14);
+  color: inherit;
+  opacity: 0.85;
 }
 .card-title {
   color: $titleColor;
@@ -21,7 +53,7 @@
   text-align: left;
   margin: 10px 0 14px 0;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -67,7 +99,7 @@
   font-weight: 600;
 }
 .project-image {
-  height: 200px;
+  height: 190px;
   overflow: hidden;
   background: rgba(128, 128, 128, 0.08);
 }
@@ -178,8 +210,12 @@
 .modal-image {
   width: 100%;
   max-height: 260px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
+}
+.modal-image-cover {
+  object-fit: cover;
+  object-position: top left;
 }
 
 .modal-title {
@@ -307,4 +343,28 @@
 .modal-body::-webkit-scrollbar-thumb {
   background-color: rgba(128, 128, 128, 0.5);
   border-radius: 4px;
+}
+
+.modal-media {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+.modal-media-el {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #000;
+}
+.modal-media-close {
+  background: none;
+  border: none;
+  color: #ec7037;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
 }
