@@ -549,6 +549,12 @@ const companyProject = {
       ]
     },
     {
+      evidence: [
+        "Command Center",
+        "EHS Plan",
+        "Inspections",
+        "Tour: all pages"
+      ],
       title: "What I built",
       title_vi: "Cách đã làm",
       intro:

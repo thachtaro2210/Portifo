@@ -109,8 +109,11 @@ export default function ProjectPage({id}) {
   }
 
   const gallery = p.gallery || [];
-  const images = gallery.filter(g => g.type === "image");
-  const videos = gallery.filter(g => g.type === "video");
+  const used = new Set((p.story || []).flatMap(x => x.evidence || []));
+  const unused = gallery.filter(g => !used.has(g.name));
+  const images = unused.filter(g => g.type === "image");
+  const videos = unused.filter(g => g.type === "video");
+  const byName = name => gallery.find(g => g.name === name);
   const desc = t(p, "projectDesc");
 
   return (
@@ -187,6 +190,33 @@ export default function ProjectPage({id}) {
                   </div>
                 </div>
               ))}
+            </div>
+          ) : null}
+          {s.evidence ? (
+            <div className="pp-evidence">
+              <span className="pp-evidence-label">
+                {isVi ? "Dẫn chứng" : "Evidence"}
+              </span>
+              <div className="pp-evidence-grid">
+                {s.evidence
+                  .map(byName)
+                  .filter(Boolean)
+                  .map(g => (
+                    <figure
+                      key={g.url}
+                      className={
+                        g.type === "video" ? "pp-figure is-wide" : "pp-figure"
+                      }
+                    >
+                      {g.type === "video" ? (
+                        <video src={g.url} controls preload="metadata" />
+                      ) : (
+                        <img src={g.url} alt={t(g, "name")} loading="lazy" />
+                      )}
+                      <figcaption>{t(g, "name")}</figcaption>
+                    </figure>
+                  ))}
+              </div>
             </div>
           ) : null}
         </section>

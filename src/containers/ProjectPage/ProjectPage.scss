@@ -1,5 +1,5 @@
 .pp {
-  max-width: 820px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 2rem 1.25rem 5rem;
   text-align: left;
@@ -106,6 +106,7 @@
   margin-top: 0;
 }
 .pp-p {
+  max-width: 80ch;
   font-size: 16px;
   line-height: 1.75;
   margin: 0 0 1rem;
@@ -261,4 +262,28 @@
 .pp-arrow {
   color: var(--primary);
   font-weight: 700;
+}
+
+.pp-evidence {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border: 1px dashed var(--border-strong);
+  border-radius: 14px;
+}
+.pp-evidence-label {
+  display: block;
+  margin-bottom: 0.9rem;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.pp-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  .is-wide {
+    grid-column: 1 / -1;
+  }
 }
