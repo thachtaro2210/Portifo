@@ -388,13 +388,12 @@ const bigProjects = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Company project (featured case study)
+// Company projects (featured case studies)
 
-const companyProject = {
-  title: "Company Project",
-  title_vi: "Dự án tại công ty",
-  subtitle: "A REAL SYSTEM I BUILT AND SHIPPED AT WORK",
-  subtitle_vi: "HỆ THỐNG THỰC TẾ MÌNH ĐÃ XÂY DỰNG TẠI CÔNG TY",
+// Screenshots and demo videos are hosted on R2, not committed to this repo.
+const R2 = "https://pub-0e820f9648c44b9287ba41be64a35ed6.r2.dev/";
+
+const gemsProject = {
   id: "gems",
   cover: require("./assets/images/ehs_logo.png"),
   company: "19T Digital",
@@ -893,8 +892,223 @@ const companyProject = {
       desc_vi:
         "Cài được như ứng dụng PWA. Tính năng xây dựng theo phản hồi của khách qua nhiều vòng."
     }
+  ]
+};
+
+const nineteenSiteProject = {
+  id: "19t-web",
+  cover: R2 + "19t/19t_01_home.webp",
+  company: "19T Digital",
+  status: "Local demo, mock data",
+  status_vi: "Bản demo local, dữ liệu mẫu",
+  name: "19T Digital - Company Website & Content CMS",
+  name_vi: "19T Digital - Website công ty & CMS quản trị nội dung",
+  role: "Full-Stack Developer",
+  role_vi: "Lập trình viên Full-Stack",
+  summary:
+    "The company website for a software agency, with every page driven by an in-house CMS: portfolio case studies, PoC and website demos, blog, job posts and inbound leads.",
+  summary_vi:
+    "Website công ty cho một agency phần mềm, mọi trang đều lấy nội dung từ CMS tự xây: hồ sơ dự án, demo PoC và website mẫu, blog, tin tuyển dụng và khách hàng tiềm năng.",
+  stats: [
+    {value: "11", label: "Public pages", label_vi: "Trang public"},
+    {value: "8", label: "Admin screens", label_vi: "Màn hình quản trị"},
+    {value: "12", label: "Data models", label_vi: "Mô hình dữ liệu"}
   ],
-  display: true
+  tech: [
+    "Next.js 16",
+    "React 19",
+    "TypeScript",
+    "Tailwind CSS 4",
+    "Prisma 5",
+    "MySQL / MariaDB",
+    "Zod",
+    "dnd-kit",
+    "Motion",
+    "Bunny Stream",
+    "S3 (Cloudfly)",
+    "Nodemailer"
+  ],
+  gallery: [
+    {
+      type: "image",
+      name: "Homepage",
+      name_vi: "Trang chủ",
+      url: R2 + "19t/19t_01_home.webp"
+    },
+    {
+      type: "image",
+      name: "Case study page",
+      name_vi: "Trang chi tiết dự án",
+      url: R2 + "19t/19t_02_project.webp"
+    },
+    {
+      type: "video",
+      name: "Tour: public site and admin",
+      name_vi: "Tour: trang public và trang quản trị",
+      url: R2 + "demo_19t_tour.webm"
+    }
+  ],
+  story: [
+    {
+      title: "Context",
+      title_vi: "Bối cảnh",
+      intro:
+        "An agency sells web apps, websites and Zalo Mini Apps. Its own site had to show that work and be editable by the sales team, not by a developer pushing code for every new case study or job post.",
+      intro_vi:
+        "Agency bán web app, website và Zalo Mini App. Website của chính họ phải trưng bày được các dự án đó và để đội sales tự sửa, thay vì mỗi lần thêm dự án hay tin tuyển dụng lại phải nhờ dev đẩy code."
+    },
+    {
+      title: "Problems to solve",
+      title_vi: "Vấn đề đặt ra",
+      items: [
+        {
+          title: "Content locked in code",
+          title_vi: "Nội dung nằm trong code",
+          desc: "Headings, stats and section copy were hard-coded, so any wording change needed a deploy.",
+          desc_vi:
+            "Tiêu đề, số liệu và nội dung từng khối đều hard-code, đổi một câu chữ cũng phải deploy lại."
+        },
+        {
+          title: "Case studies have different shapes",
+          title_vi: "Mỗi dự án một hình dạng khác nhau",
+          desc: "Some projects need a full-bleed image, some a text-image split. The editor had to pick a layout per section instead of writing raw HTML.",
+          desc_vi:
+            "Có dự án cần ảnh tràn viền, có dự án cần bố cục chữ bên ảnh. Người biên tập phải chọn được bố cục cho từng khối thay vì gõ HTML thô."
+        },
+        {
+          title: "Demos are the sales pitch",
+          title_vi: "Demo chính là thứ đi bán",
+          desc: "PoCs and website templates needed their own detail pages with problem, solution, features, timeline and screenshots.",
+          desc_vi:
+            "PoC và website mẫu cần trang chi tiết riêng, có vấn đề, giải pháp, tính năng, lộ trình và hình ảnh màn hình."
+        },
+        {
+          title: "Leads must not be lost",
+          title_vi: "Không được rơi khách",
+          desc: "Contact and job applications had to land in the database and in the inbox at the same time.",
+          desc_vi:
+            "Liên hệ tư vấn và hồ sơ ứng tuyển phải vào cả database lẫn hộp thư cùng lúc."
+        }
+      ]
+    },
+    {
+      evidence: [
+        "Homepage",
+        "Case study page",
+        "Tour: public site and admin"
+      ],
+      title: "What I built",
+      title_vi: "Những gì đã xây",
+      intro:
+        "One Next.js App Router codebase holds both the public site and the admin area. Every public page reads from Prisma, so nothing on screen is hard-coded copy.",
+      intro_vi:
+        "Một codebase Next.js App Router chứa cả trang public lẫn khu quản trị. Mọi trang public đều đọc dữ liệu qua Prisma nên không còn nội dung hard-code trên màn hình.",
+      items: [
+        {
+          title: "Key-value content store",
+          title_vi: "Kho nội dung dạng key-value",
+          desc: "A Content model keyed by page and key feeds every heading, stat and block of copy, edited from one admin screen.",
+          desc_vi:
+            "Model Content đánh khóa theo trang và key, cung cấp mọi tiêu đề, số liệu và đoạn nội dung, sửa tại một màn hình quản trị duy nhất."
+        },
+        {
+          title: "Section layouts instead of raw HTML",
+          title_vi: "Bố cục khối thay cho HTML thô",
+          desc: "Case study sections are stored as markup carrying a layout key and image slots, parsed back into a typed structure before rendering.",
+          desc_vi:
+            "Các khối của trang dự án được lưu dưới dạng markup mang khóa bố cục và ô ảnh, parse lại thành cấu trúc có kiểu trước khi render."
+        },
+        {
+          title: "Drag-to-reorder listings",
+          title_vi: "Kéo thả sắp xếp danh sách",
+          desc: "Portfolio and PoC order is set by dragging rows in admin and previewing the public order before saving.",
+          desc_vi:
+            "Thứ tự dự án và PoC đặt bằng cách kéo thả hàng trong trang quản trị, xem trước thứ tự hiển thị rồi mới lưu."
+        },
+        {
+          title: "Media pipeline",
+          title_vi: "Luồng xử lý media",
+          desc: "Images go to S3-compatible storage with presigned uploads; demo videos go to Bunny Stream with token-signed embeds.",
+          desc_vi:
+            "Ảnh đẩy lên lưu trữ chuẩn S3 bằng presigned URL; video demo đẩy lên Bunny Stream, nhúng bằng link ký token."
+        }
+      ]
+    }
+  ],
+  scope: [
+    {
+      group: "Public site",
+      group_vi: "Trang public",
+      items: [
+        "Home, services, process, hosting, about",
+        "Portfolio list and case study pages",
+        "PoC and website demo detail pages",
+        "Blog with categories",
+        "Careers with application form",
+        "Contact form with lead capture"
+      ],
+      items_vi: [
+        "Trang chủ, dịch vụ, quy trình, hosting, giới thiệu",
+        "Danh sách dự án và trang chi tiết dự án",
+        "Trang chi tiết PoC và website demo",
+        "Blog có phân loại chuyên mục",
+        "Tuyển dụng kèm form ứng tuyển",
+        "Form liên hệ thu khách tiềm năng"
+      ]
+    },
+    {
+      group: "Admin",
+      group_vi: "Quản trị",
+      items: [
+        "Portfolio and platform manager",
+        "PoC and website demo manager",
+        "Blog and blog categories",
+        "Job posts and applications",
+        "Site content editor",
+        "Inbound contact list"
+      ],
+      items_vi: [
+        "Quản lý dự án và nền tảng",
+        "Quản lý PoC và website demo",
+        "Bài viết và chuyên mục",
+        "Tin tuyển dụng và hồ sơ ứng tuyển",
+        "Trình sửa nội dung toàn site",
+        "Danh sách liên hệ gửi về"
+      ]
+    }
+  ],
+  highlights: [
+    {
+      title: "No deploy to change copy",
+      title_vi: "Đổi nội dung không cần deploy",
+      desc: "Every public heading and stat is a content row, so the sales team edits the site themselves.",
+      desc_vi:
+        "Mọi tiêu đề và số liệu trên trang public đều là một bản ghi nội dung, đội sales tự sửa được."
+    },
+    {
+      title: "Typed data end to end",
+      title_vi: "Dữ liệu có kiểu xuyên suốt",
+      desc: "Prisma models plus Zod validation on the API routes keep admin input and page rendering in sync.",
+      desc_vi:
+        "Model Prisma cộng với kiểm tra Zod ở API giữ cho dữ liệu nhập vào và phần hiển thị luôn khớp nhau."
+    },
+    {
+      title: "Demo-ready in one command",
+      title_vi: "Dựng bản demo bằng một lệnh",
+      desc: "A seed script fills the database with presentable mock content, which is what the screenshots and the tour video show.",
+      desc_vi:
+        "Một script seed đổ sẵn dữ liệu mẫu trình bày được, đây cũng là dữ liệu trong ảnh chụp và video tour."
+    }
+  ]
+};
+
+const companyProjects = {
+  title: "Company Projects",
+  title_vi: "Dự án tại công ty",
+  subtitle: "REAL SYSTEMS I BUILT AND SHIPPED AT WORK",
+  subtitle_vi: "NHỮNG HỆ THỐNG THỰC TẾ MÌNH ĐÃ XÂY DỰNG TẠI CÔNG TY",
+  display: true,
+  projects: [gemsProject, nineteenSiteProject]
 };
 
 // Achievement Section
@@ -1013,7 +1227,7 @@ export {
   workExperiences,
   openSource,
   bigProjects,
-  companyProject,
+  companyProjects,
   achievementSection,
   blogSection,
   talkSection,

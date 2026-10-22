@@ -1,6 +1,6 @@
 import React, {useContext, useEffect} from "react";
 import "./ProjectPage.scss";
-import {bigProjects, companyProject} from "../../portfolio";
+import {bigProjects, companyProjects} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 const formatInlineText = text => {
@@ -61,14 +61,15 @@ const renderDesc = text => {
 };
 
 export const findProject = id => {
-  if (companyProject.id === id) {
+  const company = companyProjects.projects.find(x => x.id === id);
+  if (company) {
     return {
-      ...companyProject,
-      cover: companyProject.cover,
-      coverFit: "contain",
-      badge: companyProject.company,
-      projectName: companyProject.name,
-      projectName_vi: companyProject.name_vi,
+      ...company,
+      cover: company.cover,
+      coverFit: company.coverFit || "contain",
+      badge: company.company,
+      projectName: company.name,
+      projectName_vi: company.name_vi,
       links: []
     };
   }
@@ -115,7 +116,10 @@ export default function ProjectPage({id}) {
   const videos = unused.filter(g => g.type === "video");
   const byName = name => gallery.find(g => g.name === name);
   const desc = t(p, "projectDesc");
-  const ids = [companyProject.id, ...bigProjects.projects.map(x => x.id)];
+  const ids = [
+    ...companyProjects.projects.map(x => x.id),
+    ...bigProjects.projects.map(x => x.id)
+  ];
   const next = findProject(ids[(ids.indexOf(id) + 1) % ids.length]);
 
   return (
