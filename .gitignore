@@ -29,3 +29,6 @@ public/blogs.json
 # scratch scripts
 scratch_commits.py
 scratch/
+
+# media staged for manual upload to R2
+/media-upload

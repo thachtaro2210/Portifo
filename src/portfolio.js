@@ -992,11 +992,7 @@ const nineteenSiteProject = {
       ]
     },
     {
-      evidence: [
-        "Homepage",
-        "Case study page",
-        "Tour: public site and admin"
-      ],
+      evidence: ["Homepage", "Case study page", "Tour: public site and admin"],
       title: "What I built",
       title_vi: "Những gì đã xây",
       intro:
@@ -1102,13 +1098,384 @@ const nineteenSiteProject = {
   ]
 };
 
+const luciaProject = {
+  id: "lucia-lms",
+  cover: R2 + "lucia_01_admin_overview.webp",
+  coverFit: "cover",
+  company: "19T Digital",
+  status: "Local demo, seeded data",
+  status_vi: "Bản demo local, dữ liệu mẫu",
+  name: "Lucia Learning - E-learning Platform for Teacher Training",
+  name_vi: "Lucia Learning - Nền tảng E-learning đào tạo giáo viên mầm non",
+  role: "Full-Stack Developer",
+  role_vi: "Lập trình viên Full-Stack",
+  summary:
+    "An LMS for an early-childhood teacher training academy that had been teaching by hand over Zoom. Students follow locked lessons, take quizzes and sit scheduled exams; admins manage courses, classes, grading and the public landing page.",
+  summary_vi:
+    "Hệ thống LMS cho một học viện đào tạo giáo viên mầm non vốn dạy thủ công qua Zoom. Học viên học theo bài bị khóa tuần tự, làm quiz và thi theo lịch; quản trị viên quản lý khóa học, lớp, chấm bài và trang chủ công khai.",
+  stats: [
+    {value: "25", label: "Feature modules", label_vi: "Phân hệ chức năng"},
+    {value: "204", label: "API routes", label_vi: "API route"},
+    {value: "310", label: "UAT test cases", label_vi: "Test case UAT"}
+  ],
+  tech: [
+    "React 19",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS",
+    "Material UI",
+    "TanStack Query",
+    "React Hook Form",
+    "Zod",
+    "pdf.js",
+    "Laravel 13",
+    "PHP 8.3",
+    "Sanctum",
+    "Bunny Stream",
+    "Playwright"
+  ],
+  gallery: [
+    {
+      type: "image",
+      name: "Admin: system overview",
+      name_vi: "Admin: tổng quan hệ thống",
+      url: R2 + "lucia_01_admin_overview.webp"
+    },
+    {
+      type: "image",
+      name: "Admin: course management",
+      name_vi: "Admin: quản lý khóa học",
+      url: R2 + "lucia_02_admin_courses.webp"
+    },
+    {
+      type: "image",
+      name: "Student: online class schedule",
+      name_vi: "Học viên: lịch học trực tuyến",
+      url: R2 + "lucia_03_student_schedule.webp"
+    },
+    {
+      type: "video",
+      name: "Admin walkthrough",
+      name_vi: "Demo quản trị viên",
+      url: R2 + "lucia_demo_admin.webm"
+    },
+    {
+      type: "video",
+      name: "Student walkthrough",
+      name_vi: "Demo học viên",
+      url: R2 + "lucia_demo_student.webm"
+    }
+  ],
+  story: [
+    {
+      title: "Context",
+      title_vi: "Bối cảnh",
+      intro:
+        "The academy taught teachers live and by hand over Zoom. It wanted a self-paced platform in the style of a course marketplace: finish one video to unlock the next, a test after every module, and course content that cannot simply be shared or downloaded.",
+      intro_vi:
+        "Học viện đang dạy giáo viên trực tiếp, thủ công qua Zoom. Họ muốn một nền tảng tự học theo kiểu sàn khóa học: xem hết video mới sang bài sau, hết mỗi học phần có bài kiểm tra, và nội dung khóa học không thể bị chia sẻ hay tải về tùy ý."
+    },
+    {
+      title: "Problems to solve",
+      title_vi: "Vấn đề đặt ra",
+      items: [
+        {
+          title: "Content must not leak",
+          title_vi: "Chống lộ nội dung",
+          desc: "No video download, documents are view-only (printable, not downloadable), and each viewer is identified on screen.",
+          desc_vi:
+            "Không tải được video, tài liệu chỉ xem (in được, không tải được) và mỗi học viên được đánh dấu ngay trên màn hình."
+        },
+        {
+          title: "Learning must be enforced, not honoured",
+          title_vi: "Học phải được ép theo lộ trình",
+          desc: "Progress, unlocking and quiz answers cannot be trusted from the browser, or a student could skip ahead by editing a request.",
+          desc_vi:
+            "Tiến độ, mở khóa và đáp án quiz không thể tin vào trình duyệt, nếu không học viên sửa request là nhảy cóc được."
+        },
+        {
+          title: "Real exams, not just quizzes",
+          title_vi: "Thi thật chứ không chỉ quiz",
+          desc: "Exams need a time window, a deadline, a countdown room, mixed multiple-choice and essay questions, and manual grading.",
+          desc_vi:
+            "Bài thi cần khung giờ, hạn nộp, phòng thi có đếm ngược, câu hỏi trắc nghiệm lẫn tự luận và chấm tay."
+        },
+        {
+          title: "Staff run it without a developer",
+          title_vi: "Nhân sự tự vận hành",
+          desc: "Courses, classes, timetables, the public landing page and accounts all had to be editable from an admin area.",
+          desc_vi:
+            "Khóa học, lớp, thời khóa biểu, trang chủ công khai và tài khoản đều phải sửa được từ khu quản trị."
+        }
+      ]
+    },
+    {
+      title: "Analysis",
+      title_vi: "Phân tích",
+      items: [
+        {
+          title: "The server is the only source of truth",
+          title_vi: "Server là nguồn sự thật duy nhất",
+          desc: "Watch progress, lesson unlocking, quiz marking, exam windows and scoring are decided by the Laravel API. The React app only displays them.",
+          desc_vi:
+            "Tiến độ xem, mở khóa bài, chấm quiz, khung giờ thi và tính điểm đều do API Laravel quyết định. App React chỉ hiển thị."
+        },
+        {
+          title: "Cookie sessions, nothing sensitive in the browser",
+          title_vi: "Phiên cookie, không lưu gì nhạy cảm ở trình duyệt",
+          desc: "Sanctum session cookies instead of tokens in localStorage, so neither the token nor the role can be read or edited from the client.",
+          desc_vi:
+            "Dùng cookie session Sanctum thay vì token trong localStorage, nên token và vai trò đều không đọc hay sửa được từ phía client."
+        },
+        {
+          title: "Spec first, test last",
+          title_vi: "Đặc tả trước, kiểm thử sau cùng",
+          desc: "Changes went through OpenSpec proposals, and the finished system was checked by a 310-case UAT plan automated with Playwright.",
+          desc_vi:
+            "Các thay đổi đi qua đề xuất OpenSpec, và hệ thống hoàn thiện được kiểm bằng bộ UAT 310 test case tự động hóa bằng Playwright."
+        }
+      ]
+    },
+    {
+      title: "Main business flows",
+      title_vi: "Luồng nghiệp vụ chính",
+      intro:
+        "These are the flows I built end to end, from account to certified result.",
+      intro_vi:
+        "Đây là các luồng mình xây dựng trọn vẹn, từ cấp tài khoản đến kết quả.",
+      flows: [
+        {
+          title: "Account to class to course",
+          title_vi: "Từ tài khoản đến lớp và khóa học",
+          desc: "Accounts are issued by the academy, not self-registered. Adding a student to a class opens that class's course and its timetable for them.",
+          desc_vi:
+            "Tài khoản do học viện cấp, không tự đăng ký. Thêm học viên vào lớp là mở luôn khóa học và thời khóa biểu của lớp cho họ.",
+          steps: [
+            "Registration request or admin creates account",
+            "Add student to a class",
+            "Course and timetable appear",
+            "Notification sent"
+          ],
+          steps_vi: [
+            "Yêu cầu đăng ký hoặc admin tạo tài khoản",
+            "Thêm học viên vào lớp",
+            "Khóa học và thời khóa biểu hiện ra",
+            "Gửi thông báo"
+          ]
+        },
+        {
+          title: "Locked lesson progression",
+          title_vi: "Học tuần tự, bài sau bị khóa",
+          desc: "The player sends a heartbeat while a lesson plays. The next lesson unlocks only when the server has recorded enough watched time and the end-of-lesson quiz is passed.",
+          desc_vi:
+            "Player gửi heartbeat khi bài đang phát. Bài kế chỉ mở khi server ghi nhận đủ thời gian xem và đã qua quiz cuối bài.",
+          steps: [
+            "Lesson plays with heartbeat",
+            "Server records watched time",
+            "End-of-lesson quiz",
+            "Pass",
+            "Next lesson unlocks"
+          ],
+          steps_vi: [
+            "Phát bài kèm heartbeat",
+            "Server ghi nhận thời gian xem",
+            "Quiz cuối bài",
+            "Đạt",
+            "Mở bài kế tiếp"
+          ]
+        },
+        {
+          title: "Protected viewing",
+          title_vi: "Xem nội dung có bảo vệ",
+          desc: "Videos play from signed, short-lived embeds with the viewer's name and email overlaid. Documents are streamed to a viewer with no download button.",
+          desc_vi:
+            "Video phát từ embed có ký, hết hạn nhanh, chèn tên và email người xem lên hình. Tài liệu được stream vào trình xem, không có nút tải.",
+          steps: [
+            "Request lesson media",
+            "Server signs a temporary URL",
+            "Player shows watermark",
+            "Document streams in viewer",
+            "Download needs the academy"
+          ],
+          steps_vi: [
+            "Yêu cầu media bài học",
+            "Server ký URL tạm thời",
+            "Player hiện watermark",
+            "Tài liệu stream trong trình xem",
+            "Muốn tải phải liên hệ trung tâm"
+          ]
+        },
+        {
+          title: "Module test to exam to grading",
+          title_vi: "Kiểm tra học phần, thi và chấm bài",
+          desc: "Each module ends with a test. Official exams are scheduled per class, run in a timed room, and anything essay-style lands in a grading queue.",
+          desc_vi:
+            "Mỗi học phần kết thúc bằng bài kiểm tra. Kỳ thi chính thức được lên lịch theo lớp, làm trong phòng thi có đếm giờ, câu tự luận rơi vào hàng chờ chấm.",
+          steps: [
+            "Question bank",
+            "Exam scheduled for a class",
+            "Student enters timed room",
+            "Server scores multiple-choice",
+            "Teacher grades essays",
+            "Result published"
+          ],
+          steps_vi: [
+            "Ngân hàng câu hỏi",
+            "Lên lịch thi cho lớp",
+            "Học viên vào phòng thi có đếm giờ",
+            "Server chấm trắc nghiệm",
+            "Giáo viên chấm tự luận",
+            "Công bố kết quả"
+          ]
+        },
+        {
+          title: "Landing page CMS with rollback",
+          title_vi: "CMS trang chủ có khôi phục phiên bản",
+          desc: "The public page is built from sections edited in admin. Drafts are previewed, published as a revision, and any earlier revision can be restored.",
+          desc_vi:
+            "Trang chủ công khai ghép từ các section sửa ngay trong admin. Bản nháp xem trước được, xuất bản thành một revision và khôi phục được revision cũ.",
+          steps: [
+            "Edit section draft",
+            "Preview",
+            "Publish revision",
+            "Roll back if needed"
+          ],
+          steps_vi: [
+            "Sửa section bản nháp",
+            "Xem trước",
+            "Xuất bản revision",
+            "Khôi phục nếu cần"
+          ]
+        }
+      ]
+    },
+    {
+      title: "Admin and student, on screen",
+      title_vi: "Admin và học viên trên màn hình",
+      intro:
+        "Both walkthroughs were recorded from the app running locally on seeded data: the admin tour adds students to a class and visits every management area, the student tour covers dashboard, classes, timetable, exams, results and account.",
+      intro_vi:
+        "Cả hai video demo được quay từ app chạy local trên dữ liệu mẫu: video admin thêm học viên vào lớp và đi qua mọi khu quản trị, video học viên đi qua tổng quan, lớp học, lịch học, lịch thi, kết quả và tài khoản.",
+      evidence: [
+        "Admin: system overview",
+        "Admin: course management",
+        "Student: online class schedule",
+        "Admin walkthrough",
+        "Student walkthrough"
+      ]
+    },
+    {
+      title: "Technical highlights",
+      title_vi: "Điểm nhấn kỹ thuật",
+      items: [
+        {
+          title: "Server-authoritative progress",
+          title_vi: "Tiến độ do server quyết định",
+          desc: "Because the API owns progress and answers, editing a request in the browser cannot unlock a lesson or change a score.",
+          desc_vi:
+            "Vì API nắm tiến độ và đáp án nên sửa request ở trình duyệt cũng không mở được bài hay đổi được điểm."
+        },
+        {
+          title: "Contract-checked API",
+          title_vi: "API có kiểm tra hợp đồng",
+          desc: "An OpenAPI contract is synced and validated against the frontend, and a secrets scan and a fake-outcome scan run before hand-over.",
+          desc_vi:
+            "Hợp đồng OpenAPI được đồng bộ và đối chiếu với frontend, kèm quét lộ bí mật và quét kết quả giả trước khi bàn giao."
+        },
+        {
+          title: "Tables become cards on phones",
+          title_vi: "Bảng thành thẻ trên điện thoại",
+          desc: "Mobile-first layout where desktop data tables collapse into cards, and all colours come from one token file shared by Tailwind and Material UI.",
+          desc_vi:
+            "Bố cục mobile-first, bảng dữ liệu desktop gập thành thẻ, mọi màu đến từ một file token dùng chung cho Tailwind và Material UI."
+        }
+      ]
+    }
+  ],
+  scope: [
+    {
+      group: "Student",
+      group_vi: "Học viên",
+      items: [
+        "Dashboard and course catalogue",
+        "Lesson player with locked progression",
+        "End-of-lesson quiz and module test",
+        "Exam schedule and timed exam room",
+        "Practice sets",
+        "Online class timetable",
+        "Results, notifications, account"
+      ],
+      items_vi: [
+        "Tổng quan và danh mục khóa học",
+        "Player bài học khóa tuần tự",
+        "Quiz cuối bài và kiểm tra học phần",
+        "Lịch thi và phòng thi có đếm giờ",
+        "Bộ đề luyện tập",
+        "Lịch học trực tuyến",
+        "Kết quả, thông báo, tài khoản"
+      ]
+    },
+    {
+      group: "Admin",
+      group_vi: "Quản trị",
+      items: [
+        "Courses, chapters and lessons",
+        "Users, students, teachers and classes",
+        "Question bank, exams and grading",
+        "Timetable and notifications",
+        "Registration requests",
+        "Landing page CMS with revision history",
+        "Roles and permissions, audit log, settings"
+      ],
+      items_vi: [
+        "Khóa học, chương và bài học",
+        "Người dùng, học viên, giáo viên và lớp",
+        "Ngân hàng câu hỏi, đề thi và chấm bài",
+        "Thời khóa biểu và thông báo",
+        "Yêu cầu đăng ký",
+        "CMS trang chủ có lịch sử revision",
+        "Phân quyền, audit log, cài đặt"
+      ]
+    }
+  ],
+  highlights: [
+    {
+      title: "Anti-leak by design",
+      title_vi: "Chống lộ nội dung ngay từ thiết kế",
+      desc: "No video download, view-only documents, signed short-lived media URLs and a per-viewer watermark.",
+      desc_vi:
+        "Không tải video, tài liệu chỉ xem, URL media có ký và hết hạn nhanh, watermark theo từng người xem."
+    },
+    {
+      title: "Tested end to end",
+      title_vi: "Kiểm thử trọn vòng",
+      desc: "81 backend tests, 156 frontend tests and a 310-case UAT plan automated with Playwright.",
+      desc_vi:
+        "81 test backend, 156 test frontend và bộ UAT 310 test case tự động hóa bằng Playwright."
+    },
+    {
+      title: "Operable by staff",
+      title_vi: "Nhân sự tự vận hành được",
+      desc: "Admins manage courses, classes, exams, grading and the public landing page without a developer.",
+      desc_vi:
+        "Admin tự quản lý khóa học, lớp, kỳ thi, chấm bài và trang chủ công khai mà không cần dev."
+    },
+    {
+      title: "Audit trail",
+      title_vi: "Nhật ký kiểm toán",
+      desc: "Sensitive actions are written to an audit log that admins can review.",
+      desc_vi: "Các thao tác nhạy cảm được ghi vào audit log để admin xem lại."
+    }
+  ]
+};
+
 const companyProjects = {
   title: "Company Projects",
   title_vi: "Dự án tại công ty",
   subtitle: "REAL SYSTEMS I BUILT AND SHIPPED AT WORK",
   subtitle_vi: "NHỮNG HỆ THỐNG THỰC TẾ MÌNH ĐÃ XÂY DỰNG TẠI CÔNG TY",
   display: true,
-  projects: [gemsProject, nineteenSiteProject]
+  projects: [gemsProject, nineteenSiteProject, luciaProject]
 };
 
 // Achievement Section
