@@ -116,6 +116,9 @@ export default function ProjectPage({id}) {
   const videos = unused.filter(g => g.type === "video");
   const byName = name => gallery.find(g => g.name === name);
   const desc = t(p, "projectDesc");
+  const envTag = p.mediaEnv ? (
+    <span className="pp-media-tag">{p.mediaEnv}</span>
+  ) : null;
   const ids = [
     ...companyProjects.projects.map(x => x.id),
     ...bigProjects.projects.map(x => x.id)
@@ -235,7 +238,10 @@ export default function ProjectPage({id}) {
                       ) : (
                         <img src={g.url} alt={t(g, "name")} loading="lazy" />
                       )}
-                      <figcaption>{t(g, "name")}</figcaption>
+                      <figcaption>
+                        {t(g, "name")}
+                        {envTag}
+                      </figcaption>
                     </figure>
                   ))}
               </div>
@@ -286,7 +292,10 @@ export default function ProjectPage({id}) {
             {images.map(g => (
               <figure key={g.url} className="pp-figure">
                 <img src={g.url} alt={t(g, "name")} loading="lazy" />
-                <figcaption>{t(g, "name")}</figcaption>
+                <figcaption>
+                  {t(g, "name")}
+                  {envTag}
+                </figcaption>
               </figure>
             ))}
           </div>
@@ -300,7 +309,10 @@ export default function ProjectPage({id}) {
             {videos.map(g => (
               <figure key={g.url} className="pp-figure">
                 <video src={g.url} controls preload="metadata" />
-                <figcaption>{t(g, "name")}</figcaption>
+                <figcaption>
+                  {t(g, "name")}
+                  {envTag}
+                </figcaption>
               </figure>
             ))}
           </div>

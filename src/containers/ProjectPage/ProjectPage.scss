@@ -170,6 +170,15 @@
     color: var(--muted);
   }
 }
+.pp-media-tag {
+  margin-left: 0.5rem;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--primary-soft);
+  border-radius: 999px;
+  padding: 1px 8px;
+}
 .pp-links {
   display: flex;
   flex-wrap: wrap;

@@ -399,6 +399,7 @@ const gemsProject = {
   company: "19T Digital",
   status: "Staging environment",
   status_vi: "Môi trường staging",
+  mediaEnv: "Staging",
   name: "GEMS - Multi-Plant EHS Management System",
   name_vi:
     "GEMS - Hệ thống Quản lý An toàn, Sức khỏe & Môi trường (EHS) đa nhà máy",
@@ -899,8 +900,9 @@ const nineteenSiteProject = {
   id: "19t-web",
   cover: R2 + "19t/19t_01_home.webp",
   company: "19T Digital",
-  status: "Local demo, mock data",
-  status_vi: "Bản demo local, dữ liệu mẫu",
+  status: "Staging environment",
+  status_vi: "Môi trường staging",
+  mediaEnv: "Staging",
   name: "19T Digital - Company Website & Content CMS",
   name_vi: "19T Digital - Website công ty & CMS quản trị nội dung",
   role: "Full-Stack Developer",
@@ -1091,9 +1093,9 @@ const nineteenSiteProject = {
     {
       title: "Demo-ready in one command",
       title_vi: "Dựng bản demo bằng một lệnh",
-      desc: "A seed script fills the database with presentable mock content, which is what the screenshots and the tour video show.",
+      desc: "A seed script fills the database with presentable mock content, which is what the staging screenshots and the tour video show.",
       desc_vi:
-        "Một script seed đổ sẵn dữ liệu mẫu trình bày được, đây cũng là dữ liệu trong ảnh chụp và video tour."
+        "Một script seed đổ sẵn dữ liệu mẫu trình bày được, đây cũng là dữ liệu trong ảnh chụp và video tour trên staging."
     }
   ]
 };
@@ -1103,8 +1105,9 @@ const luciaProject = {
   cover: R2 + "lucia_01_admin_overview.webp",
   coverFit: "cover",
   company: "19T Digital",
-  status: "Local demo, seeded data",
-  status_vi: "Bản demo local, dữ liệu mẫu",
+  status: "Staging environment",
+  status_vi: "Môi trường staging",
+  mediaEnv: "Staging",
   name: "Lucia Learning - E-learning Platform for Teacher Training",
   name_vi: "Lucia Learning - Nền tảng E-learning đào tạo giáo viên mầm non",
   role: "Full-Stack Developer",
@@ -1353,9 +1356,9 @@ const luciaProject = {
       title: "Admin and student, on screen",
       title_vi: "Admin và học viên trên màn hình",
       intro:
-        "Both walkthroughs were recorded from the app running locally on seeded data: the admin tour adds students to a class and visits every management area, the student tour covers dashboard, classes, timetable, exams, results and account.",
+        "Both walkthroughs were recorded from the staging environment on seeded data: the admin tour adds students to a class and visits every management area, the student tour covers dashboard, classes, timetable, exams, results and account.",
       intro_vi:
-        "Cả hai video demo được quay từ app chạy local trên dữ liệu mẫu: video admin thêm học viên vào lớp và đi qua mọi khu quản trị, video học viên đi qua tổng quan, lớp học, lịch học, lịch thi, kết quả và tài khoản.",
+        "Cả hai video demo được quay từ môi trường staging trên dữ liệu mẫu: video admin thêm học viên vào lớp và đi qua mọi khu quản trị, video học viên đi qua tổng quan, lớp học, lịch học, lịch thi, kết quả và tài khoản.",
       evidence: [
         "Admin: system overview",
         "Admin: course management",
