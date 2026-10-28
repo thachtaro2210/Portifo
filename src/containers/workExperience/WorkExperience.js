@@ -28,6 +28,7 @@ export default function WorkExperience() {
                         date: t(card, "date"),
                         companylogo: card.companylogo,
                         role: t(card, "role"),
+                        location: t(card, "location"),
                         descBullets: t(card, "descBullets")
                       }}
                     />
