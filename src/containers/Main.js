@@ -25,8 +25,13 @@ import BackgroundPatterns from "../components/BackgroundPatterns/BackgroundPatte
 import "./Main.scss";
 
 const Main = () => {
-  const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-  const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
+  const darkPref = window.matchMedia
+    ? window.matchMedia("(prefers-color-scheme: dark)")
+    : null;
+  const [isDark, setIsDark] = useLocalStorage(
+    "isDark",
+    darkPref ? darkPref.matches : false
+  );
   const [isVi, setIsVi] = useLocalStorage("isVi", false);
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);

@@ -173,23 +173,64 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Backend Developer",
-      role_vi: "Lập trình viên Backend",
-      company: "Asia Industrial Solutions Co., Ltd",
-      company_vi: "CÔNG TY TNHH GIẢI PHÁP CÔNG NGHIỆP ASIA",
-      date: "July 2025 – September 2025",
-      date_vi: "Tháng 7, 2025 – Tháng 9, 2025",
+      role: "Intern Back End Developer",
+      role_vi: "Lập trình viên Backend (Intern)",
+      company: "Intrepid Asia",
+      company_vi: "Intrepid Asia",
+      companylogo: require("./assets/images/intrepidAsiaLogo.png"),
+      date: "Sep 2025 – Dec 2025",
+      date_vi: "Tháng 9, 2025 – Tháng 12, 2025",
+      location: "Vietnam · Remote",
+      location_vi: "Việt Nam · Từ xa",
       desc: "",
       desc_vi: "",
       descBullets: [
-        "Designed and developed high-performance backend APIs and databases.",
-        "Built RESTful APIs using Java Spring Boot and Node.js",
-        "Optimized queries and schemas for PostgreSQL and MongoDB"
+        {
+          project: "Internal ERP System",
+          bullets: [
+            "Developed and maintained RESTful APIs for internal business operations.",
+            "Implemented backend features for data management and frontend integration."
+          ]
+        },
+        {
+          project: "SPA Web Application",
+          bullets: [
+            "Developed backend APIs and business logic for a SPA web application.",
+            "Integrated APIs with the frontend and handled data processing."
+          ]
+        },
+        {
+          project: "Villa Sales & Rental Platform",
+          bullets: [
+            "Developed backend services for a villa sales and rental platform.",
+            "Implemented property listings, search, booking, and customer management features.",
+            "Designed RESTful APIs for frontend integration."
+          ]
+        }
       ],
       descBullets_vi: [
-        "Thiết kế và phát triển các hệ thống API backend và cơ sở dữ liệu hiệu năng cao.",
-        "Xây dựng các RESTful API sử dụng Java Spring Boot và Node.js",
-        "Tối ưu hóa truy vấn và cấu trúc cơ sở dữ liệu PostgreSQL và MongoDB"
+        {
+          project: "Internal ERP System",
+          bullets: [
+            "Phát triển và duy trì các RESTful API phục vụ quy trình vận hành nội bộ doanh nghiệp.",
+            "Xây dựng các tính năng backend quản lý dữ liệu và tích hợp đồng bộ với frontend."
+          ]
+        },
+        {
+          project: "SPA Web Application",
+          bullets: [
+            "Phát triển các API backend và xử lý toàn bộ luồng nghiệp vụ cho ứng dụng web SPA.",
+            "Tích hợp API với giao diện frontend và kiểm soát luồng xử lý dữ liệu."
+          ]
+        },
+        {
+          project: "Villa Sales & Rental Platform",
+          bullets: [
+            "Phát triển các dịch vụ backend cho nền tảng quản lý, mua bán và cho thuê villa.",
+            "Triển khai tính năng danh sách bất động sản, tìm kiếm, đặt phòng và quản lý khách hàng.",
+            "Thiết kế và chuẩn hóa hệ thống RESTful API kết nối liền mạch với frontend."
+          ]
+        }
       ]
     }
   ]
