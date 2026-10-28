@@ -232,6 +232,65 @@ const workExperiences = {
           ]
         }
       ]
+    },
+    {
+      role: "Full-Stack Developer",
+      role_vi: "Lập trình viên Full-Stack",
+      company: "19T Digital",
+      company_vi: "19T Digital",
+      companylogo: require("./assets/images/nineteenDigitalLogo.png"),
+      date: "May 2025 – November 2025",
+      date_vi: "Tháng 5, 2025 – Tháng 11, 2025",
+      location: "Ho Chi Minh City · On-site / Hybrid",
+      location_vi: "TP. Hồ Chí Minh · On-site / Hybrid",
+      desc: "",
+      desc_vi: "",
+      descBullets: [
+        {
+          project: "GEMS - Multi-Plant EHS Management System",
+          bullets: [
+            "Architected and developed a full-stack multi-plant EHS system across 17 modules and 8 user roles, replacing scattered spreadsheets for a 5-factory manufacturing group.",
+            "Built responsive analytics dashboards with Recharts, multi-plant permission scopes, and automated Excel reporting using ExcelJS and TanStack Query."
+          ]
+        },
+        {
+          project: "19T Digital - Company Portal & Block CMS",
+          bullets: [
+            "Built the official agency website and custom headless CMS with Next.js 16, React 19, Prisma, and Tailwind CSS 4 (11 public pages, 8 admin management screens).",
+            "Implemented drag-and-drop case study layout builder (dnd-kit), Bunny Stream video hosting integration, and automated lead capture workflows."
+          ]
+        },
+        {
+          project: "Lucia Learning - Teacher Training LMS",
+          bullets: [
+            "Engineered end-to-end LMS platform with 25 modules and 204 API routes for early-childhood teacher training, migrating manual Zoom classes into an automated learning portal.",
+            "Developed sequential course progression, timed examination engines with automatic grading, and comprehensive classroom administration."
+          ]
+        }
+      ],
+      descBullets_vi: [
+        {
+          project: "GEMS - Hệ thống EHS Quản lý Đa Nhà máy",
+          bullets: [
+            "Thiết kế và phát triển full-stack hệ thống quản lý An toàn - Sức khỏe - Môi trường (EHS) gồm 17 phân hệ và 8 nhóm vai trò cho tập đoàn sản xuất 5 nhà máy.",
+            "Xây dựng dashboard trực quan hóa dữ liệu với Recharts, cơ chế chuyển đổi phạm vi nhà máy linh hoạt và module xuất báo cáo Excel tự động bằng ExcelJS."
+          ]
+        },
+        {
+          project: "19T Digital - Website Công ty & CMS Quản trị Nội dung",
+          bullets: [
+            "Xây dựng toàn diện website công ty và hệ thống CMS tùy biến linh hoạt trên nền Next.js 16, React 19, Prisma và Tailwind CSS 4 (11 trang public, 8 màn hình quản trị).",
+            "Phát triển tính năng kéo-thả sắp xếp block dự án (dnd-kit), tích hợp stream video qua Bunny Stream và tự động hóa xử lý khách hàng tiềm năng."
+          ]
+        },
+        {
+          project: "Lucia Learning - Nền tảng LMS Đào tạo Giáo viên",
+          bullets: [
+            "Phát triển hệ thống E-learning chuyên sâu với 25 phân hệ chức năng và 204 API route, chuyển đổi hoàn toàn mô hình dạy học thủ công sang nền tảng số hóa.",
+            "Hiện thực cơ chế khóa bài học tuần tự, hệ thống thi trắc nghiệm bấm giờ tự động chấm điểm và module quản trị lớp học, khóa học trực quan."
+          ]
+        }
+      ]
     }
   ]
 };

@@ -7,6 +7,9 @@
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .experience-card-dark {
@@ -16,6 +19,9 @@
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .experience-card:hover,
@@ -149,11 +155,15 @@
 .experience-text-details {
   padding: 1.5rem 2rem 2rem;
   margin-top: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .experience-body-content {
   margin-top: 1.5rem;
   text-align: left;
+  flex: 1;
 }
 
 .experience-projects-list {
